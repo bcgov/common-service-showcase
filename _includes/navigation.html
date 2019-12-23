@@ -1,0 +1,10 @@
+<nav class="navigation-main" id="navbar">
+    <div class="container">
+      <ul>
+      {% assign navitems = site.cards | sort: 'order' %}
+      {% for item in navitems %}
+         <li><a href="{{ site.baseurl }}{{ item.permalink }}" {% if page.url == item.permalink %}class="active"{% endif %}>{{ item.name }}</a></li>
+      {% endfor %}
+      </ul>
+    </div>
+</nav>

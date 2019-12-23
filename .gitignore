@@ -1,29 +1,7 @@
-.DS_Store
-.gradle
-.nyc_output
-.scannerwork
-build
-coverage
-dist
-node_modules
-
-# local env files
-local.*
-local-*.*
-.env.local
-.env.*.local
-
-# Log files
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Editor directories and files
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
 .idea
-.vscode
-*.iml
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw*
+common-service-showcase.iml
