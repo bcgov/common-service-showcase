@@ -6,9 +6,15 @@ order: 20
 permalink: /dgrsc.html
 urls:
   github: https://github.com/bcgov/document-generation-showcase
-  prod: https://dgrsc.pathfinder.gov.bc.ca/dgrsc
+  app: https://dgrsc.pathfinder.gov.bc.ca/dgrsc
 ---
-<a id="{{ page.name }}"></a>
-A blurb about {{ page.title }} and what it does...  
-1. Carbone
-1. PDF
+The Document Generation Showcase (DGRSC) application demonstrates the capabilities of [CDOGS](#CDOGS) and how you could incorporate the API into your application.  
+
+DGRSC will show the following:
+
+1. Review various template types and data payloads.  
+1. Upload your own templates and datasets.
+1. Edit the dataset on screen.  
+1. Tell the API to convert to PDF output.   
+
+
