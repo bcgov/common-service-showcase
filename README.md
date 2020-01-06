@@ -42,4 +42,4 @@ Open a console window with directory at root of this repo and run:
     bundle exec jekyll serve
     ```
 
-1. Go to site: http://localhost:4000/common-service-showcase
+1. Go to site: http://localhost:4000/common-service-showcase/
