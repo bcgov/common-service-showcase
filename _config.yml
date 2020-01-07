@@ -18,12 +18,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Common Service Showcase
-email: NR.CommonServiceShowcase@gov.bc.ca
+title: Common Services Showcase  
+bannertitle: Register to start using the messaging and document generation APIs  
+email: NR.CommonServiceShowcase@gov.bc.ca  
 intro: >-
-  A common service can be many different things.
-  The characteristic they all share is that they were built once to provide benefit many times.
-  Here you can check out what the Common Service Showcase Team has been working on for you.
+  In an information technology context, common services consist of software capabilities that can be enabled and cost-effectively used by multiple business units. The characteristics to strive for include self service onboarding, capabilities that can be tried out, and having implemented examples available for review. Keep reading below to see what the Common Service Showcase Team has been working on for you.  
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
