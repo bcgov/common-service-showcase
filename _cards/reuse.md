@@ -27,7 +27,7 @@ img:
   <div class="col-lg-7 col-xs-12">
        <div class="row">
           {% for item in page.img %}
-            <div class="col-xs-4">{{ item.alt }}<br/>
+            <div class="col-sm-4">{{ item.alt }}<br/>
             <a href="{{item.url}}">
             <img class="img-fluid my-3" src="{{ site.baseurl }}{{item.path }}" alt="{{ item.alt }}">
             </a>
