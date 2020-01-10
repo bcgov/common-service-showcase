@@ -11,10 +11,10 @@ urls:
   getstarted: "#Onboarding"  
 ---
 <div class="row">
-  <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+  <div class="col-lg-6 col-xs-12">
   <p>Using common services will jump start the development efforts of your team and lower the overall maintenance cost of your product. You can focus on building features that matter to your users. Get started today!</p>
   </div>
-  <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+  <div class="col-lg-6 col-xs-12">
           {% if page.img %}
             <img class="img-fluid my-3" src="{{ site.baseurl }}{{page.img.path }}" alt="{{ page.img.alt }}">
           {% endif %}   
