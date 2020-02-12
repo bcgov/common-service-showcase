@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "6ca258d3-42bf-4c8f-864f-59439c7c6af0",
+		"_postman_id": "ffaf3773-003f-454c-a63c-fdcc424700d8",
 		"name": "Common Services",
 		"description": "This Collection contains all the API calls for all the Common Services.\n\nAuthorization by OIDC Token (OAuth 2.0) is added to this top-level collection (see 'Authorization' tab), and inherited by all the Common Services and their API calls contained within it.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
@@ -539,7 +539,7 @@
 			"protocolProfileBehavior": {}
 		},
 		{
-			"name": "Token",
+			"name": "Request a Token",
 			"request": {
 				"auth": {
 					"type": "basic",
@@ -561,38 +561,8 @@
 					{
 						"key": "Content-Type",
 						"name": "Content-Type",
-						"value": "application/x-www-form-urlencoded",
-						"type": "text"
-					},
-					{
-						"key": "Host",
-						"value": "sso.pathfinder.gov.bc.ca",
-						"type": "text"
-					},
-					{
-						"key": "Content-Length",
-						"value": "36",
-						"type": "text"
-					},
-					{
-						"key": "Accept-Encoding",
-						"value": "gzip, deflate, br",
-						"type": "text"
-					},
-					{
-						"key": "Connection",
-						"value": "keep-alive",
-						"type": "text"
-					},
-					{
-						"key": "Cache-Control",
-						"value": "no-cache",
-						"type": "text"
-					},
-					{
-						"key": "Accept",
-						"value": "*/*",
-						"type": "text"
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
 					}
 				],
 				"body": {
@@ -601,11 +571,6 @@
 						{
 							"key": "grant_type",
 							"value": "client_credentials",
-							"type": "text"
-						},
-						{
-							"key": "scope",
-							"value": "",
 							"type": "text"
 						}
 					]
