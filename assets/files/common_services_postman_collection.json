@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "c5e64191-c2e4-4ec7-8b94-557b99842864",
+		"_postman_id": "6b2338a7-0cc8-445d-bc7d-de2443d1590a",
 		"name": "Common Services",
 		"description": "This Collection contains all the API calls for all the Common Services.\n\nAuthorization by OIDC Token (OAuth 2.0) is added to this top-level collection (see 'Authorization' tab), and inherited by all the Common Services and their API calls contained within it.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
@@ -39,7 +39,7 @@
 										"description": "Returns a health check.\r\nThis endpoint is used to see if the API is up and running.\r\n"
 									},
 									"response": []
-										}
+								}
 							],
 							"protocolProfileBehavior": {},
 							"_postman_isSubFolder": true
@@ -84,13 +84,13 @@
 											],
 											"variable": [
 												{
-													"description": "Hash for file, returned via X-Report-Hash headers when report generated",
 													"key": "uid",
-													"value": "a150459b-8c5a-47b6-8789-fc9f30e31987"
+													"value": "320930cf9ec47e50bfe79e31b2ccda12859655c2de4640350bb396a9a09dd6ab",
+													"description": "Hash for file, returned via X-Report-Hash headers when report generated"
 												}
 											]
 										},
-										"description": "Check if generated file/report has been cached.\r\nThis endpoint returns OK if a generated file can be retrieved from the cache.\r\n"
+										"description": "Check if generated file/report has been cached.\r\nThis endpoint returns OK if a generated file can be retrieved from the cache. The uid variable should match a hash returned when you upload a template with the '/template' POST request."
 									},
 									"response": []
 								},
@@ -121,13 +121,13 @@
 											],
 											"variable": [
 												{
-													"description": "Hash for file, returned via X-Report-Hash headers when report generated",
 													"key": "uid",
-													"value": "320930cf9ec47e50bfe79e31b2ccda12859655c2de4640350bb396a9a09dd6ab"
-								}
+													"value": "320930cf9ec47e50bfe79e31b2ccda12859655c2de4640350bb396a9a09dd6ab",
+													"description": "Hash for file, returned via X-Report-Hash headers when report generated"
+												}
 											]
 										},
-										"description": "Remove file from cache.\r\nThis endpoint returns OK if a file has been removed from cache.\r\n"
+										"description": "Remove file from cache.\r\nThis endpoint returns OK if a file has been removed from cache.\r\nThe uid variable should match a hash returned when you upload a template with the '/template' POST request."
 									},
 									"response": []
 								}
@@ -189,9 +189,9 @@
 												{
 													"key": "template",
 													"contentType": "",
-													"description": "binary file content",
+													"description": "a template, binary file content",
 													"type": "file",
-													"src": "[see https://dgrsc.pathfinder.gov.bc.ca/dgrsc/#/cdogs for example templates]"
+													"src": []
 												}
 											],
 											"options": {
@@ -216,7 +216,7 @@
 												"template"
 											]
 										},
-										"description": "Upload a template\r\nThis endpoint accepts a template to be used for report generation/render."
+										"description": "Upload a template\r\nThis endpoint accepts a template to be used for report generation/render.\r\nThe body of this form-data/multipart POST should be a binary file. see https://dgrsc.pathfinder.gov.bc.ca/dgrsc/#/cdogs for example templates"
 									},
 									"response": []
 								},
@@ -234,7 +234,7 @@
 												"type": "text",
 												"value": "application/json",
 												"disabled": true
-										}
+											}
 										],
 										"body": {
 											"mode": "formdata",
@@ -244,7 +244,7 @@
 													"language": "json"
 												}
 											}
-									},
+										},
 										"url": {
 											"raw": "https://cdogs-master-idcqvl-prod.pathfinder.gov.bc.ca/api/v2/template/:uid?download=true",
 											"protocol": "https",
@@ -276,7 +276,7 @@
 												}
 											]
 										},
-										"description": "Check if template has been cached.\r\nThis endpoint returns OK if a template file can be retrieved from the cache.\r\n"
+										"description": "Check if template has been cached.\r\nThis endpoint returns OK if a template file can be retrieved from the cache. The uid variable should match a hash returned when you upload a template with the '/template' POST request."
 									},
 									"response": []
 								},
@@ -291,8 +291,8 @@
 												"type": "text",
 												"value": "application/json",
 												"disabled": true
-								}
-							],
+											}
+										],
 										"body": {
 											"mode": "formdata",
 											"formdata": [],
@@ -301,7 +301,7 @@
 													"language": "json"
 												}
 											}
-						},
+										},
 										"url": {
 											"raw": "https://cdogs-master-idcqvl-prod.pathfinder.gov.bc.ca/api/v2/template/:uid",
 											"protocol": "https",
@@ -319,14 +319,14 @@
 												":uid"
 											],
 											"variable": [
-						{
-													"description": "Hash for template, returned via X-Template-Hash headers when template uploaded",
+												{
 													"key": "uid",
-													"value": "320930cf9ec47e50bfe79e31b2ccda12859655c2de4640350bb396a9a09dd6ab"
+													"value": "320930cf9ec47e50bfe79e31b2ccda12859655c2de4640350bb396a9a09dd6ab",
+													"description": "Hash for template, returned via X-Template-Hash headers when template uploaded"
 												}
 											]
 										},
-										"description": "Remove file from cache.\r\nThis endpoint returns OK if a file has been removed from cache.\r\n"
+										"description": "Remove file from cache.\r\nThis endpoint returns OK if a file has been removed from cache.\r\nThe uid variable should match a hash returned when you upload a template with the '/template' POST request."
 									},
 									"response": []
 								},
@@ -404,8 +404,8 @@
 												"raw": {
 													"language": "json"
 												}
-										}
-									},
+											}
+										},
 										"url": {
 											"raw": "https://cdogs-master-idcqvl-prod.pathfinder.gov.bc.ca/api/v2/template/render",
 											"protocol": "https",
@@ -817,6 +817,28 @@
 							],
 							"protocolProfileBehavior": {},
 							"_postman_isSubFolder": true
+						}
+					],
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "e471f54a-62b7-4a8a-a577-a269c102334e",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "3fe79f30-0e4f-48fc-9509-3dcbe82d34d7",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
 						}
 					],
 					"protocolProfileBehavior": {},
