@@ -11,7 +11,7 @@ urls:
 The following onboarding process has been tested and we are looking for feedback to make it even better
 
 1. A developer on your team must create an account by using their IDIR credentials to Login to [GetOK](#GETOK)
-  a. In the navigation bar, go to _Request Account_ or _My Applications_ and click the _Add a new Application_ button, fill out the form with your application acronym (short name) any additional comments.
+  a. In the navigation bar, go to _Request Account_ or _My Applications_ and click the _Add a new Application_ button, fill out the form with **_your_** application acronym (short name) and any additional comments.
   b. The GETOK support team will receive your request and confirm that approval to use the NRS Common Services.
 1. After you are notified about your registration being completed, start a new GetOK session ([log out](#GETOK) and log in) and find your new application under _My Applications_.
 1. Follow the steps in GETOK to promote a client and get credentials in a new environment or reset your client password.
