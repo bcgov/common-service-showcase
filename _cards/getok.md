@@ -6,7 +6,7 @@ order: 22
 permalink: /getok.html
 urls:
   github: https://github.com/bcgov/nr-get-token
-  app: https://getok-master-k8vopl-prod.pathfinder.gov.bc.ca
+  app: https://getok.pathfinder.gov.bc.ca/getok
 ---
 Get Token (GETOK) is fundamentally a tool to automate the process for providing teams access (via client credentials) to Common Services.  Use GETOK to promote your access through the various environments: DEV/INT, TEST, and PROD.
 
