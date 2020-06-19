@@ -38,19 +38,19 @@ By default, the hosts are set to the DEV environment.
 | --- | --- |
 | auth\_host | https://sso-dev.pathfinder.gov.bc.ca |
 | cdogs\_host | https://cdogs-master-idcqvl-dev.pathfinder.gov.bc.ca |
-| ches\_host | http://ches-master-9f0fbe-dev.pathfinder.gov.bc.ca |
+| ches\_host | https://ches-master-9f0fbe-dev.pathfinder.gov.bc.ca |
 
 | TEST | URL |
 | --- | --- |
 | auth\_host | https://sso-test.pathfinder.gov.bc.ca |
 | cdogs\_host | https://cdogs-master-idcqvl-test.pathfinder.gov.bc.ca |
-| ches\_host | http://ches-master-9f0fbe-test.pathfinder.gov.bc.ca |
+| ches\_host | https://ches-master-9f0fbe-test.pathfinder.gov.bc.ca |
 
 | PROD | URL |
 | --- | --- |
 | auth\_host | https://sso-prod.pathfinder.gov.bc.ca |
 | cdogs\_host | https://cdogs-master-idcqvl-prod.pathfinder.gov.bc.ca |
-| ches\_host | http://ches-master-9f0fbe-prod.pathfinder.gov.bc.ca |
+| ches\_host | https://ches-master-9f0fbe-prod.pathfinder.gov.bc.ca |
 
 ## Overview
 Once you have set the host and client id/secret variables, you can begin running the API calls. The order of the calls is very important, as each call will set variables that are used in subsequent calls. In particular, you will always want to run "Request a Token" first.  If you encounter any 401 responses, try getting a new token.  
