@@ -9,7 +9,7 @@ img:
   alt: CDOGS 
 urls:
   github: https://github.com/bcgov/common-document-generation-service
-  docs: https://cdogs-master-idcqvl-prod.pathfinder.gov.bc.ca/api/v1/docs  
+  docs: https://cdogs-master-idcqvl-prod.pathfinder.gov.bc.ca/api/v2/docs  
 ---
 <div class="row">
   <div class="col-lg-12 text-center">
