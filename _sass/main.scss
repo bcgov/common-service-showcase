@@ -1,3 +1,5 @@
+$blue-text: #003366;
+
 @font-face {
     font-family: 'BCSans';
     font-style: normal;
@@ -49,26 +51,47 @@ a .btn-primary i {
     margin-bottom: 3.000em;
     z-index: 99;
 }
-.pt-6,
-.py-6 {
-  padding-top: 5rem !important;
-}
-.pr-6,
-.px-6 {
-  padding-right: 5rem !important;
-}
-.pb-6,
-.py-6 {
-  padding-bottom: 5rem !important;
-}
-.pl-6,
-.px-6 {
-  padding-left: 5rem !important;
+
+/* Icons */
+.icon-list {
+  text-align: center;
+  p {
+    margin-top: 2rem;
+    color: $blue-text;
+  }
 }
 
-.carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
- }
- .carousel-control-next-icon {
-   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
- }
+/* Bootstrap Carousel */
+.carousel {
+  padding: 5rem;
+  background-image: linear-gradient(130deg, rgba(255, 255, 255, 0.5) 16%, #e8e8e8 91%), linear-gradient(77deg, #ffffff -32%, #e2e2e2 129%);
+  .carousel-card-header {
+    font-weight: bold;
+    color: $blue-text;
+  }
+  p {
+    color: $blue-text;
+  }
+  ul {
+    list-style: none;
+    color: $blue-text;
+    padding-left: 0;
+    li {
+      line-height: 2;
+    }
+  }
+  .carousel-control-prev {
+    justify-content: flex-start;
+    padding-left: 10px;
+    .carousel-control-prev-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+    }
+  }
+  .carousel-control-next {
+    justify-content: flex-end;
+    padding-right: 10px;
+    .carousel-control-next-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+    }
+  }
+}

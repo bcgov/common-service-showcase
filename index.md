@@ -3,63 +3,45 @@ layout: default
 name: HOME
 ---
 <main role="main">
-  {% assign allcards = site.cards | sort: 'order' %}  
-
-  <!-- Main jumbotron for a primary marketing message or call to action -->
-  <div class="jumbotron">
-    <div class="container-fluid">
-      <h3 class="display-4">{{ site.bannertitle }}</h3>
-      <p>{{ site.intro }}</p>
-    </div>
-  </div>
+  {% assign carouselCards = site.overview | where: "type", "carousel" | sort: 'order' %}
+  {% assign iconCards = site.overview | where: "type", "icon" | sort: 'order' %}
 
   <div class="container">
-    {% for card in allcards %}
-    <div class="card mb-3">
-      <div class="row no-gutters card-header">
-        <div class="col-lg-8 col-md-6">
-          <h5><a class="pt-6" id="{{ card.name }}"></a>{{ card.title }}</h5>
+    <div id="overviewCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        {% for card in carouselCards %}
+        <div class="carousel-item {% if forloop.index == 1 %} active{% endif %}">
+          <div class="row">
+            <div class="col-sm-5">
+              <h4 class="carousel-card-header">{{ card.title }}</h4>
+              <p>{{ card.content }}</p>
+            </div>
+            <div class="col-sm-7">
+              <img class="img-fluid" src="{{ site.baseurl }}{{card.img.path }}" alt="{{ card.img.alt }}">
+            </div>
+          </div>
         </div>
-        <div class="col-lg-4 col-md-6 text-right">
-          {% if card.urls.onboarding %}
-          <a href="{{ card.urls.onboarding }}" target="_blank" class="btn btn-link">
-            <i class="align-middle fa-2x fa-external-link-alt fa-external-link-square-alt fas" aria-hidden="true"></i>
-            <span class="align-middle">Create an account</span>
-          </a>
-          {% endif %}
-          {% if card.urls.getstarted %}
-          <a href="{{ card.urls.getstarted }}" class="btn btn-link">
-            <i class="align-middle fa-2x fa-external-link-alt fa-external-link-square-alt fas" aria-hidden="true"></i>
-            <span class="align-middle">Get started today</span>
-          </a>
-          {% endif %}
-          {% if card.urls.app %}
-          <a href="{{ card.urls.app }}" target="_blank" class="btn btn-link">
-            <i class="align-middle fa-2x fa-external-link-alt fa-external-link-square-alt fas" aria-hidden="true"></i>
-            <span class="align-middle">Try it out</span>
-          </a>
-          {% endif %}
-          {% if card.urls.docs %}
-          <a href="{{ card.urls.docs }}" target="_blank" class="btn btn-link">
-            <i class="align-middle fa-2x fa-external-link-alt fa-external-link-square-alt fas" aria-hidden="true"></i>
-            <span class="align-middle">Review the API</span>
-          </a>
-          {% endif %}
-        </div>
+        {% endfor %}
       </div>
-      <div class="card-body">
-        <div>{{ card.content }}</div>
-        <div class="text-right">
-          {% if card.urls.github %}
-            <a href="{{ card.urls.github }}" target="_blank" class="btn btn-link">
-            <i class="fab fa-2x fa-github align-middle" aria-hidden="true"></i>
-            <span class="align-middle">Github</span>
-          </a>
-          {% endif %}
+      <a class="carousel-control-prev" href="#overviewCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#overviewCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <div class="my-5 px-5">
+      <p>Common Components are a set of reusable digital building blocks that solve common problems across government. We aim to promote, curate, develop, and make it easy to onboard to implement common components which will <strong>reduce costs, accelerate development, and promote consistency</strong> and supportability of BC Gov digital services</p>
+      <div class="row">
+        {% for card in iconCards %}
+        <div class="icon-list col-sm-4">
+            <img class="img-fluid" src="{{ site.baseurl }}{{card.img.path }}" alt="{{ card.img.alt }}">
+            {{ card.content}}
         </div>
+        {% endfor %}
       </div>
     </div>
-    {% endfor %}
-    <hr class="mb-1" />
   </div>
 </main>
