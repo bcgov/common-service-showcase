@@ -1,4 +1,5 @@
 $blue-text: #003366;
+$grey-bg: #f1f1f1;
 
 @font-face {
     font-family: 'BCSans';
@@ -92,6 +93,47 @@ a .btn-primary i {
     padding-right: 10px;
     .carousel-control-next-icon {
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+    }
+  }
+}
+
+/* Checkerboard layout */
+.checkerboard {
+  .check-title {
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  .check-content {
+    padding: 2.5rem;
+    ul {
+      margin-bottom: 0;
+      li {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  .row:nth-child(odd) {
+    .check-title {
+      background: $blue-text;
+      color: white;
+    }
+    .check-content {
+      background: $grey-bg;
+      color: $blue-text;
+    }
+  }
+  .row:nth-child(even) {
+    .check-title {
+      background: $grey-bg;
+      color: $blue-text;
+    }
+    .check-content {
+      background: $blue-text;
+      color: white;
+      p {
+        color: white;
+        padding-left: 1.3rem;
+      }
     }
   }
 }
