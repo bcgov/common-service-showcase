@@ -28,8 +28,11 @@ url: "https://bcgov.github.io" # the base hostname & protocol for your site, e.g
 
 collections_dir: collections
 collections:
-  - cards
-  - overview
+  cards:
+  overview:
+  services:
+    output: true
+    permalink: /:collection/:name
 
 # Exclude from processing.
 # The following items will not be processed, by default.

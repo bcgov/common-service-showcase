@@ -6,6 +6,7 @@ name: HOME
   {% assign carouselCards = site.overview | where: "type", "carousel" | sort: 'order' %}
   {% assign iconCards = site.overview | where: "type", "icon" | sort: 'order' %}
   {% assign checkerboardCards = site.overview | where: "type", "checkerboard" | sort: 'order' %}
+  {% assign commonServices = site.services | sort: 'order' %}
 
   <div class="container">
     <div id="overviewCarousel" class="carousel slide" data-ride="carousel">
@@ -23,7 +24,7 @@ name: HOME
               <p>{{ card.content }}</p>
             </div>
             <div class="col-sm-7">
-              <img class="img-fluid" src="{{ site.baseurl }}{{card.img.path }}" alt="{{ card.img.alt }}">
+              <img class="img-fluid" src="{{ site.baseurl }}{{ card.img.path }}" alt="{{ card.img.alt }}">
             </div>
           </div>
         </div>
@@ -43,7 +44,7 @@ name: HOME
       <div class="row">
         {% for card in iconCards %}
         <div class="icon-list col-sm-4">
-            <img class="img-fluid" src="{{ site.baseurl }}{{card.img.path }}" alt="{{ card.img.alt }}">
+            <img class="img-fluid" src="{{ site.baseurl }}{{ card.img.path }}" alt="{{ card.img.alt }}">
             {{ card.content}}
         </div>
         {% endfor %}
@@ -60,6 +61,36 @@ name: HOME
         </div>
       </div>
       {% endfor %}
+    </div>
+    <div class="text-center my-5">
+      <h3 class="title-text"> <img class="img-fluid mr-3" src="{{ site.baseurl }}/assets/images/developer_board.svg" alt="components"> <strong>Available Common Components</strong></h3>
+    </div>
+    <div class="mb-5 service-card-list">
+      <div class="row">
+        {% for card in commonServices %}
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-10 col-xl-11">
+                  <h3 class="card-title">{{ card.title }} ({{ card.name }})</h3>
+                </div>
+                <div class="col-2 col-xl-1 text-right">
+                  <a href="services/{{ card.name }}"><i class="fa fa-arrow-circle-right"></i></a>
+                </div>
+              </div>
+              <strong>Onboarding Options:</strong>
+              <br />
+              <ul class="service-onboard">
+                {% for onb in card.onboard %}
+                  <li>{{ onb }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
     </div>
   </div>
 </main>

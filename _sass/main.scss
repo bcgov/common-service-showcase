@@ -30,6 +30,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     font-size: 1em;
     line-height: 1.25;
+    color: #494949;
 }
 p {
     font-size: 1em;
@@ -51,6 +52,9 @@ a .btn-primary i {
     margin-top: 4.063em;
     margin-bottom: 3.000em;
     z-index: 99;
+}
+.title-text {
+  color: $blue-text;
 }
 
 /* Icons */
@@ -139,6 +143,31 @@ a .btn-primary i {
         color: white;
         padding-left: 1.3rem;
       }
+    }
+  }
+}
+
+/* List of clickable cards */
+.service-card-list {
+  i {
+    color: $blue-text;
+  }
+  .card {
+    margin-bottom: 2rem;
+    box-shadow: 0 0 25px 0 rgba(214, 214, 214, 0.5);
+    border: solid 1px #f2f2f2;
+  }
+  .card-title {
+    font-size: 1.125rem;
+    margin-bottom: 3rem;
+  }
+  .service-onboard {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    li {
+      margin-right: 2rem;
+      float: left;
     }
   }
 }
