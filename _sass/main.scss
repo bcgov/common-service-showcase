@@ -56,6 +56,8 @@ a .btn-primary i {
 /* Icons */
 .icon-list {
   text-align: center;
+  padding-left: 3.1rem;
+  padding-right: 3.1rem;
   p {
     margin-top: 2rem;
     color: $blue-text;
@@ -64,8 +66,11 @@ a .btn-primary i {
 
 /* Bootstrap Carousel */
 .carousel {
-  padding: 5rem;
   background-image: linear-gradient(130deg, rgba(255, 255, 255, 0.5) 16%, #e8e8e8 91%), linear-gradient(77deg, #ffffff -32%, #e2e2e2 129%);
+  .carousel-card-text {
+    padding-top: 100px;
+    padding-left: 100px;
+  }
   .carousel-card-header {
     font-weight: bold;
     color: $blue-text;

@@ -4,8 +4,8 @@ title: Common Services
 type: carousel
 order: 2
 img:
-  path: /assets/images/cdogs.svg
-  alt: CDOGS
+  path: /assets/images/slide2.svg
+  alt: Common Services
 ---
 - Hosted Services
 - Reusable Components
