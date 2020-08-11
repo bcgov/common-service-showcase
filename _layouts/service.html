@@ -1,0 +1,52 @@
+---
+layout: default
+---
+<main role="main">
+  <div class="container">
+    <div class="page-header">
+      <h2 class="text-center">{{ page.title }} ({{ page.name }})</h2>
+      <div class="page-description">{{ page.description }}</div>
+    </div>
+
+    <h4><strong>Onboarding Options</strong></h4>
+    <p></p>
+
+    <h5> <img class="img-fluid mr-3" src="{{ site.baseurl }}/assets/images/key.svg" alt="components"> <strong>API Access
+        through GETOK</strong></h5>
+
+    <div class="feature-card">
+      <div class="card">
+        <div class="card-header">
+          {{ page.title }} ({{ page.name }})
+        </div>
+        <div class="card-body">
+          <div class="row no-gutters">
+            <div class="col-sm-3">API Capability</div>
+            <div class="col-sm-9">{{ content }}</div>
+          </div>
+          <div class="row no-gutters">
+            <div class="col-sm-3">API Review</div>
+            <div class="col-sm-9"><a href="{{ page.urls.docs }}" target="_blank">Specification
+                <i class="fas fa-external-link-square-alt"></i></a>
+            </div>
+          </div>
+          <div class="row no-gutters">
+            <div class="col-sm-3">GitHub</div>
+            <div class="col-sm-9"><a href="{{ page.urls.github }}" target="_blank">Repository
+                <i class="fas fa-external-link-square-alt"></i></a>
+            </div>
+          </div>
+          <div class="row no-gutters">
+            <div class="col-sm-3">See in Action</div>
+            <div class="col-sm-9">
+              <a href="{{ page.urls.showcase }}" target="_blank">Showcase App
+                <i class="fas fa-external-link-square-alt"></i></a>
+              <hr>
+              {{ page.showcaseDescription }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

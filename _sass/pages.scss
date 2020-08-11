@@ -1,0 +1,46 @@
+@import "variables";
+
+/* The tabled list of service/onboarding features */
+.feature-card {
+  margin-left: 2em;
+  margin-right: 2em;
+  > p {
+    margin-top: 1em;
+    margin-bottom: 0;
+  }
+  .card {
+    margin-top: 1em;
+    ul {
+      line-height: 2rem;
+      margin-bottom: 0;
+    }
+    a {
+      color: $blue-text-light;
+      i {
+        margin-left: .5rem;
+        font-size: larger;
+      }
+    }
+    .card-header {
+      color: $blue-text-light;
+      font-size: 1.125rem;
+      font-weight: bold;
+      text-align: center;
+    }
+    .card-body {
+      padding: 0;
+      .row {
+        &:not(:last-child) {
+          border-bottom: solid 1px $card-border
+        };
+        div[class^="col"] {
+          padding: 1rem 2rem;
+          &:first-child {
+            color: $blue-text-light;
+            border-right: solid 1px $card-border;
+          }
+        }
+      }
+    }
+  }
+}

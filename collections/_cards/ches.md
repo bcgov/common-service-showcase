@@ -8,7 +8,7 @@ urls:
   github: https://github.com/bcgov/common-hosted-email-service
   docs: https://ches-master-9f0fbe-prod.pathfinder.gov.bc.ca/api/v1/docs
 ---
-Need to send emails? Need to send bulk emails? Need to send templated messages populated from a dataset?  Need to schedule delivery of emails?  
+Need to send emails? Need to send bulk emails? Need to send templated messages populated from a dataset?  Need to schedule delivery of emails?
 
 The CHES API is capable of doing the following:
 

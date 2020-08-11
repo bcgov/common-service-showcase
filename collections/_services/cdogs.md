@@ -1,4 +1,5 @@
 ---
+layout: service
 name: CDOGS
 title: Common Document Generation Service
 type: service
