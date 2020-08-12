@@ -74,7 +74,7 @@ name: HOME
               <h3 class="card-title">{{ card.title }} ({{ card.name }})</h3>
             </div>
             <div class="col-2 col-xl-1 text-right">
-              <a href="services/{{ card.name }}"><i class="fa fa-arrow-circle-right"></i></a>
+              <a href="{{ site.baseurl }}{{ card.url }}.html"><i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <strong>Onboarding Options:</strong>

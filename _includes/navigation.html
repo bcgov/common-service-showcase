@@ -13,7 +13,7 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="compDropdown">
           {% for card in commonServices %}
-            <a class="dropdown-item" href="{{ site.baseurl }}/services/{{ card.name }}">{{ card.title }}</a>
+            <a class="dropdown-item" href="{{ site.baseurl }}{{ card.url }}.html">{{ card.title }}</a>
           {% endfor %}
         </div>
       </li>
@@ -24,7 +24,7 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="onbDropdown">
           {% for card in onboarding %}
-            <a class="dropdown-item" href="{{ site.baseurl }}/onboarding/{{ card.name }}">{{ card.title }}</a>
+            <a class="dropdown-item" href="{{ site.baseurl }}{{ card.url }}.html">{{ card.title }}</a>
           {% endfor %}
         </div>
       <li><a href='https://github.com/bcgov/nr-get-token/wiki' target="_blank" {% if current[1] == 'contact' %}class='active' {% endif %}>Wiki</a></li>
