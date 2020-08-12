@@ -3,7 +3,7 @@
 {% assign onboarding = site.onboarding | sort: 'order' %}
 
 <nav class="navigation-main" id="navbar">
-  <div class="container-fluid">
+  <div class="container">
     <ul>
       <li class="{% if page.url == '/' %}active{% endif %}"><a href='{{ site.baseurl }}/'>Overview</a></li>
       <li class="nav-item dropdown {% if page.url contains '/services/' %}active{% endif %}">

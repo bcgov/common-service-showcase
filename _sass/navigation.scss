@@ -11,7 +11,7 @@
     -moz-box-shadow: 0 0.375em 0.500em -0.250em #b3b1b3;
     box-shadow: 0 0.375em 0.500em -0.250em #b3b1b3;
     z-index: 999;
-    .container-fluid {
+    .container {
         padding: 0;
         ul {
             display: flex;
@@ -21,11 +21,11 @@
             list-style: none;
             margin-left: -1.563em;
             li {
-                padding: 0.68em 0 0.68em 0;
+                padding: 0.85em 0;
                 margin: 0;
                 a {
                     display: flex;
-                    font-size: 0.813em;
+                    font-size: 1rem;
                     font-weight: normal;
                     color: #fff;
                     padding: 0 0.938em 0 0.938em;
@@ -34,7 +34,7 @@
                         text-decoration: underline;
                     }
                     &::after {
-                      margin-top: 6px;
+                      margin-top: 8px;
                     }
                 }
                 &.active {

@@ -38,6 +38,7 @@ name: HOME
       <span class="sr-only">Next</span>
     </a>
   </div>
+  
   <div class="mb-3 mt-5 px-5">
     <p>Common Components are a set of reusable digital building blocks that solve common problems across government. We aim to promote, curate, develop, and make it easy to onboard to implement common components which will <strong><em>reduce costs, accelerate development, and promote consistency</em></strong> and supportability of BC Gov digital services.</p>
     <div class="row">
