@@ -28,7 +28,6 @@ url: "https://bcgov.github.io" # the base hostname & protocol for your site, e.g
 
 collections_dir: collections
 collections:
-  cards:
   overview:
   services:
     output: true

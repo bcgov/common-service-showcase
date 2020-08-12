@@ -38,7 +38,7 @@ name: HOME
       <span class="sr-only">Next</span>
     </a>
   </div>
-  
+
   <div class="mb-3 mt-5 px-5">
     <p>Common Components are a set of reusable digital building blocks that solve common problems across government. We aim to promote, curate, develop, and make it easy to onboard to implement common components which will <strong><em>reduce costs, accelerate development, and promote consistency</em></strong> and supportability of BC Gov digital services.</p>
     <div class="row">
@@ -76,7 +76,7 @@ name: HOME
                 <h3 class="card-title">{{ card.title }} ({{ card.name }})</h3>
               </div>
               <div class="col-2 col-xl-1 text-right">
-                <a href="{{ site.baseurl }}{{ card.url }}.html"><i class="fa fa-arrow-circle-right"></i></a>
+                <a href="{{ site.baseurl }}{{ card.url }}.html"><i class="fa fa-lg fa-arrow-circle-right"></i></a>
               </div>
             </div>
             <strong>Onboarding Options:</strong>
