@@ -10,7 +10,6 @@
     color: $blue-text;
   }
   .page-description {
-    position: relative;
     background-color: $grey-bg;
     font-size: 1.25rem;
     line-height: 2;
@@ -31,17 +30,8 @@
       }
     }
     .page-description-content {
-      padding: 2em 5em;
+      padding: 2em 0;
     }
-    &:before {
-      content:"";
-      background-color: $grey-bg;
-      position: absolute;
-      height: 100%;
-      width: 4000px;
-      left: -2000px;
-      z-index: -1;
-  }
   }
 }
 
@@ -102,9 +92,6 @@
     margin-top: 3rem;
     margin-bottom: 3rem;
   }
-  a {
-    color: $blue-text-light;
-  }
   .feature-card .onboard-table-desc {
     display: none;
   }
@@ -112,5 +99,28 @@
 
 /* Style specific to the team */
 .team-content {
+  ol {
+    line-height: 32px;
+    padding-bottom: 2rem;
+  }
+  img {
+    margin-right: 1rem;
+  }
+  strong {
+    color: $blue-text;
+  }
+}
 
+.onboarding-content, .team-content {
+  h4, h5, h6 {
+    font-weight: bold;
+  }
+  h4 {
+    font-size: 1.25rem;
+    color: $blue-text;
+    margin-bottom: 1.25rem;
+  }
+  a {
+    color: $blue-text-light;
+  }
 }

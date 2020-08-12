@@ -6,9 +6,8 @@ layout: default
 <div class="page-header">
   <h2 class="text-center">Fast, frictionless and self-serve onboarding</h2>
   <div class="page-description">
-    <div class="page-description-content">
+    <div class="container page-description-content">
       <h4 class="mb-3"><strong>Onboard Option</strong></h4>
-
       <ul>
         {% for onb in onboarding %}
         <li class="{% if onb.url == page.url %}active{% endif %}">
@@ -20,6 +19,6 @@ layout: default
   </div>
 </div>
 
-<div class="onboarding-content">
+<div class="container onboarding-content">
   {{ content }}
 </div>
