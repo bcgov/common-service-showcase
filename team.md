@@ -25,7 +25,7 @@ If you have any feedback or questions, please reach out to us.
 
 
 ![address]({{ site.baseurl }}/assets/images/map.svg "Our Address")
-**Address:** 727 Fitsgard St.
+**Address:** 2975 Jutland Rd.
 
 
 ![rocketchat]({{ site.baseurl }}/assets/images/rocketchat-brands.svg "Contact Us on Rocket Chat")
