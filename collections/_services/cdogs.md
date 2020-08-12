@@ -14,6 +14,8 @@ urls:
   github: https://github.com/bcgov/common-document-generation-service
   docs: https://cdogs-master-idcqvl-prod.pathfinder.gov.bc.ca/api/v2/docs
   showcase: https://dgrsc.pathfinder.gov.bc.ca/dgrsc/
+  postman: https://bcgov.github.io/common-service-showcase/assets/files/common_services_postman_collection.json
+  postmanHelp: https://bcgov.github.io/common-service-showcase/assets/files/common_services_postman_readme.md
 
 showcaseDescription: >-
   The Document Generation Showcase demonstrates the capabilities of the Common Document Generation Service API (CDOGS).

@@ -34,10 +34,24 @@ layout: default
         <div class="row no-gutters">
           <div class="col-sm-3">API Review</div>
           <div class="col-sm-9">
-            {% if page.urls.docs %}
-            <a href="{{ page.urls.docs }}" target="_blank">Specification
-              <i class="fas fa-external-link-square-alt"></i>
-            </a>
+            {% if page.urls.docs or page.urls.postman %}
+              {% if page.urls.docs %}
+              <a href="{{ page.urls.docs }}" target="_blank">Specification
+                <i class="fas fa-external-link-square-alt"></i>
+              </a>
+              {% endif %}
+              {% if page.urls.postman %}
+                <br /> <br />
+                <a href="{{ page.urls.postman }}" target="_blank" download>Postman Collection
+                  <i class="fas fa-download"></i>
+                </a>
+                {% endif %}
+                {% if page.urls.postmanHelp %}
+                <br /> <br />
+                <a href="{{ page.urls.postmanHelp }}" target="_blank" download>Postman Collection Help
+                  <i class="fas fa-download"></i>
+                </a>
+              {% endif %}
             {% else %}
             Not Applicable
             {% endif %}
