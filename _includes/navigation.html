@@ -5,8 +5,8 @@
 <nav class="navigation-main" id="navbar">
   <div class="container-fluid">
     <ul>
-      <li><a href='{{ site.baseurl }}/' {% if current[1] == '/' %}class='active' {% endif %}>Overview</a></li>
-      <li class="nav-item dropdown">
+      <li class="{% if page.url == '/' %}active{% endif %}"><a href='{{ site.baseurl }}/'>Overview</a></li>
+      <li class="nav-item dropdown {% if page.url contains '/services/' %}active{% endif %}">
         <a class="nav-link dropdown-toggle" href="#" id="compDropdown" role="button" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false">
           Components
@@ -17,7 +17,7 @@
           {% endfor %}
         </div>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown  {% if page.url contains '/onboarding/' %}active{% endif %}">
         <a class="nav-link dropdown-toggle" href="#" id="onbDropdown" role="button" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false">
           Onboard
@@ -27,8 +27,8 @@
             <a class="dropdown-item" href="{{ site.baseurl }}{{ card.url }}.html">{{ card.title }}</a>
           {% endfor %}
         </div>
-      <li><a href='https://github.com/bcgov/nr-get-token/wiki' target="_blank" {% if current[1] == 'contact' %}class='active' {% endif %}>Wiki</a></li>
-      <li><a href='/contact' {% if current[1] == 'contact' %}class='active' {% endif %}>Our Team</a></li>
+      <li><a href='https://github.com/bcgov/nr-get-token/wiki' target="_blank">Wiki</a></li>
+      <li class="{% if page.url == '/team' %}active{% endif %}"><a href='{{ site.baseurl }}/team.html'>Our Team</a></li>
     </ul>
   </div>
 </nav>

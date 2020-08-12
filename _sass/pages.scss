@@ -4,7 +4,7 @@
 .page-header {
   margin-top: 11em;
   h2 {
-    margin-bottom: 2em;
+    margin-bottom: 3em;
     font-size: 1.5rem;
     font-weight: bold;
     color: $blue-text;
@@ -86,4 +86,31 @@
       }
     }
   }
+}
+
+/* Style specific to the onboarding pages */
+.onboarding-content {
+  h4, h5, h6 {
+    font-weight: bold;
+  }
+  h4 {
+    font-size: 1.25rem;
+    color: $blue-text;
+    margin-bottom: 1.25rem;
+  }
+  h5 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  a {
+    color: $blue-text-light;
+  }
+  .feature-card .onboard-table-desc {
+    display: none;
+  }
+}
+
+/* Style specific to the team */
+.team-content {
+
 }

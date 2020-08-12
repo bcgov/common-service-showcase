@@ -1,3 +1,5 @@
+@import "variables";
+
 .navigation-main {
     display: block;
     position: fixed;
@@ -10,7 +12,7 @@
     box-shadow: 0 0.375em 0.500em -0.250em #b3b1b3;
     z-index: 999;
     .container-fluid {
-        padding: 0.625em 0 0.625em 0;
+        padding: 0;
         ul {
             display: flex;
             flex-direction: row;
@@ -19,7 +21,8 @@
             list-style: none;
             margin-left: -1.563em;
             li {
-                margin: 0.313em 0;
+                padding: 0.68em 0 0.68em 0;
+                margin: 0;
                 a {
                     display: flex;
                     font-size: 0.813em;
@@ -34,6 +37,10 @@
                       margin-top: 6px;
                     }
                 }
+                &.active {
+                  border-bottom: 2px solid $bcgov-yellow;
+                  background-color: $nav-active-bg;
+                }
             }
             .dropdown-menu {
               padding-top: 0;
@@ -43,17 +50,13 @@
               a {
                 padding-top: 1rem;
                 padding-bottom: 1rem;
-                color: #1a5a96;
+                color: $blue-text-light;
                 text-decoration: none;
                 &:hover {
-                  background-color: #f2f2f2;
+                  background-color: $grey-bg;
                   text-decoration: none;
                 }
               }
-            }
-            .active {
-                text-decoration: underline;
-                font-weight: bold;
             }
         }
     }

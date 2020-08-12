@@ -1,6 +1,8 @@
+@import "variables";
+
 header {
-    background-color: #036;
-    border-bottom: 0.125em solid #fcba19;
+    background-color: $blue-text;
+    border-bottom: 0.125em solid $bcgov-yellow;
     padding: 0 1.875em 0 1.875em;
     color: #fff;
     display: flex;
