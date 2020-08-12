@@ -75,53 +75,11 @@ Not Applicable
 {% if page.onboard contains "DockerHub" %}
 <h5> <img class="img-fluid mr-3" src="{{ site.baseurl }}/assets/images/Docker.svg" alt="Docker"> <strong>DockerHub
     @bcgovimage</strong></h5>
-<div class="feature-card">
-  <p>Finding and sharing container images (software components you can deploy and host) with your team and the
-    Docker community</p>
-  <div class="card">
-    <div class="card-header">
-      {{ page.title }} Images
-    </div>
-    <div class="card-body">
-      {% for image in page.dockerImages %}
-      <div class="row no-gutters">
-        <div class="col-sm-5">{{ image.name }}</div>
-        <div class="col-sm-7">
-          <a href="{{ image.url }}" target="_blank">{{ image.url }}
-            <i class="fas fa-external-link-square-alt"></i>
-          </a>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</div>
+{% include common/dockerTable.html param=page %}
 {% endif %}
 
 {% if page.onboard contains "NPM" %}
 <h5> <img class="img-fluid mr-3" src="{{ site.baseurl }}/assets/images/npm.svg" alt="npm"> <strong>NPM
     @bcgovimage</strong></h5>
-<div class="feature-card">
-  <p>Share independently usable packages of code for teams to achieve a variety of capabilities in their systems.
-  </p>
-  <div class="card">
-    <div class="card-header">
-      {{ page.title }} NPM Packages
-    </div>
-    <div class="card-body">
-      {% for package in page.npmPackages %}
-      <div class="row no-gutters">
-        <div class="col-sm-3">{{ package.name }}</div>
-        <div class="col-sm-9">
-          {{ package.description }}
-          <hr>
-          <a href="{{ package.url }}" target="_blank">{{ package.url }}
-            <i class="fas fa-external-link-square-alt"></i>
-          </a>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</div>
+{% include common/npmTable.html param=page %}
 {% endif %}

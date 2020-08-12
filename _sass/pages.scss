@@ -10,17 +10,29 @@
     color: $blue-text;
   }
   .page-description {
-    p {
-      margin-bottom: 0;
-    }
-    .page-description-content {
-      padding: 2em 5em;
-    }
     position: relative;
     background-color: $grey-bg;
     font-size: 1.25rem;
     line-height: 2;
     margin-bottom: 3em;
+    p {
+      margin-bottom: 0;
+    }
+    ul {
+      margin-bottom: 0;
+    }
+    li {
+      font-size: 1.125rem;
+      &.active {
+        font-weight: bold;
+      }
+      a {
+        color: $blue-text-light;
+      }
+    }
+    .page-description-content {
+      padding: 2em 5em;
+    }
     &:before {
       content:"";
       background-color: $grey-bg;
