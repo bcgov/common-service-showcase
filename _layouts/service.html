@@ -1,52 +1,127 @@
 ---
 layout: default
 ---
-<main role="main">
-  <div class="container">
-    <div class="page-header">
-      <h2 class="text-center">{{ page.title }} ({{ page.name }})</h2>
-      <div class="page-description">{{ page.description }}</div>
+<div class="page-header">
+  <h2 class="text-center">{{ page.title }} ({{ page.name }})</h2>
+  <div class="page-description">
+    <p>{{ page.description }}</p>
+  </div>
+</div>
+
+<h4><strong>Onboarding Options</strong></h4>
+{% if page.onboard and page.onboard != empty  %}
+<p>{{ page.onboardDescription }}</p>
+{% else %}
+Not Applicable
+{% endif %}
+
+{% if page.onboard contains "API Access" %}
+<h5> <img class="img-fluid mr-3" src="{{ site.baseurl }}/assets/images/key.svg" alt="components"> <strong>API Access
+    through GETOK</strong></h5>
+<div class="feature-card">
+  <div class="card">
+    <div class="card-header">
+      {{ page.title }} ({{ page.name }})
     </div>
-
-    <h4><strong>Onboarding Options</strong></h4>
-    <p></p>
-
-    <h5> <img class="img-fluid mr-3" src="{{ site.baseurl }}/assets/images/key.svg" alt="components"> <strong>API Access
-        through GETOK</strong></h5>
-
-    <div class="feature-card">
-      <div class="card">
-        <div class="card-header">
-          {{ page.title }} ({{ page.name }})
+    <div class="card-body">
+      <div class="row no-gutters">
+        <div class="col-sm-3">API Capability</div>
+        <div class="col-sm-9">{{ content }}</div>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-sm-3">API Review</div>
+        <div class="col-sm-9">
+          {% if page.urls.docs %}
+          <a href="{{ page.urls.docs }}" target="_blank">Specification
+            <i class="fas fa-external-link-square-alt"></i>
+          </a>
+          {% else %}
+          Not Applicable
+          {% endif %}
         </div>
-        <div class="card-body">
-          <div class="row no-gutters">
-            <div class="col-sm-3">API Capability</div>
-            <div class="col-sm-9">{{ content }}</div>
-          </div>
-          <div class="row no-gutters">
-            <div class="col-sm-3">API Review</div>
-            <div class="col-sm-9"><a href="{{ page.urls.docs }}" target="_blank">Specification
-                <i class="fas fa-external-link-square-alt"></i></a>
-            </div>
-          </div>
-          <div class="row no-gutters">
-            <div class="col-sm-3">GitHub</div>
-            <div class="col-sm-9"><a href="{{ page.urls.github }}" target="_blank">Repository
-                <i class="fas fa-external-link-square-alt"></i></a>
-            </div>
-          </div>
-          <div class="row no-gutters">
-            <div class="col-sm-3">See in Action</div>
-            <div class="col-sm-9">
-              <a href="{{ page.urls.showcase }}" target="_blank">Showcase App
-                <i class="fas fa-external-link-square-alt"></i></a>
-              <hr>
-              {{ page.showcaseDescription }}
-            </div>
-          </div>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-sm-3">GitHub</div>
+        <div class="col-sm-9">
+          {% if page.urls.docs %}
+          <a href="{{ page.urls.github }}" target="_blank">Repository
+            <i class="fas fa-external-link-square-alt"></i>
+          </a>
+          {% else %}
+          Not Applicable
+          {% endif %}
+        </div>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-sm-3">See in Action</div>
+        <div class="col-sm-9">
+          {% if page.urls.showcase %}
+          <a href="{{ page.urls.showcase }}" target="_blank">Showcase App
+            <i class="fas fa-external-link-square-alt"></i>
+          </a>
+          <hr>
+          {{ page.showcaseDescription }}
+          {% else %}
+          Not Applicable
+          {% endif %}
         </div>
       </div>
     </div>
   </div>
-</main>
+  {% include common/getokBtn.html %}
+</div>
+{% endif %}
+
+{% if page.onboard contains "DockerHub" %}
+<h5> <img class="img-fluid mr-3" src="{{ site.baseurl }}/assets/images/Docker.svg" alt="Docker"> <strong>DockerHub
+    @bcgovimage</strong></h5>
+<div class="feature-card">
+  <p>Finding and sharing container images (software components you can deploy and host) with your team and the
+    Docker community</p>
+  <div class="card">
+    <div class="card-header">
+      {{ page.title }} Images
+    </div>
+    <div class="card-body">
+      {% for image in page.dockerImages %}
+      <div class="row no-gutters">
+        <div class="col-sm-5">{{ image.name }}</div>
+        <div class="col-sm-7">
+          <a href="{{ image.url }}" target="_blank">{{ image.url }}
+            <i class="fas fa-external-link-square-alt"></i>
+          </a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% if page.onboard contains "NPM" %}
+<h5> <img class="img-fluid mr-3" src="{{ site.baseurl }}/assets/images/npm.svg" alt="npm"> <strong>NPM
+    @bcgovimage</strong></h5>
+<div class="feature-card">
+  <p>Share independently usable packages of code for teams to achieve a variety of capabilities in their systems.
+  </p>
+  <div class="card">
+    <div class="card-header">
+      {{ page.title }} NPM Packages
+    </div>
+    <div class="card-body">
+      {% for package in page.npmPackages %}
+      <div class="row no-gutters">
+        <div class="col-sm-3">{{ package.name }}</div>
+        <div class="col-sm-9">
+          {{ package.description }}
+          <hr>
+          <a href="{{ package.url }}" target="_blank">{{ package.url }}
+            <i class="fas fa-external-link-square-alt"></i>
+          </a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endif %}

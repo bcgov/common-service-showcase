@@ -1,8 +1,9 @@
 {% assign current = page.url | downcase | split: '/' %}
 {% assign commonServices = site.services | sort: 'order' %}
+{% assign onboarding = site.onboarding | sort: 'order' %}
 
 <nav class="navigation-main" id="navbar">
-  <div class="container">
+  <div class="container-fluid">
     <ul>
       <li><a href='{{ site.baseurl }}/' {% if current[1] == '/' %}class='active' {% endif %}>Overview</a></li>
       <li class="nav-item dropdown">
@@ -16,9 +17,16 @@
           {% endfor %}
         </div>
       </li>
-      </li>
-      <li class="nav-item dropdown"><a href='/contact' {% if current[1] == 'contact' %}class='active'
-          {% endif %}>Onboard</a></li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="onbDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Onboard
+        </a>
+        <div class="dropdown-menu" aria-labelledby="onbDropdown">
+          {% for card in onboarding %}
+            <a class="dropdown-item" href="{{ site.baseurl }}/onboarding/{{ card.name }}">{{ card.title }}</a>
+          {% endfor %}
+        </div>
       <li><a href='https://github.com/bcgov/nr-get-token/wiki' target="_blank" {% if current[1] == 'contact' %}class='active' {% endif %}>Wiki</a></li>
       <li><a href='/contact' {% if current[1] == 'contact' %}class='active' {% endif %}>Our Team</a></li>
     </ul>
