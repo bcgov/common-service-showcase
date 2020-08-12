@@ -7,4 +7,4 @@ img:
   path: /assets/images/slide1.svg
   alt: Common Services
 ---
-*Collaborately deliver digital services better to the public safely, efficiently and accountably*
+*Collaboratively delivering accountable digital services to the public safely and efficiently*
