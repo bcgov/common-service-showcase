@@ -7,7 +7,7 @@ order: 1
 ---
 #### API Access through GETOK
 
-Get Token (GETOK) is fundamentally a tool to automate the process for providing teams access (via client credentials) to Common Services. Use GETOK to promote your access through the various environments: DEV, TEST, and PROD.
+Get Token (GETOK) is a tool to automate the process for providing teams access (via client credentials) to Hosted Common Services. Use GETOK to promote your access through the various environments: DEV, TEST, and PROD.
 
 ###### Available  Components:
 - Common Hosted Email Service
@@ -30,6 +30,6 @@ See how it works: <a href="" data-toggle="modal" data-target="#exampleModal">Aut
 {% include common/postmanExampleModal.html %}
 
 ###### Step 5 Invite your team member
-After you’ve created the account for your application, you can invite your team member(s) anytime using our invitation form. The invitee(s) will get an email that is linked to your application and be able to jump in at any stages of the processes. All members can add or remove other team members (except him or herself).
+After you’ve created the account for your application, you can invite your team member(s) anytime. The invitee(s) will get granted access to their IDIR, linked to your application, and be able to jump in at any stages of the processes.
 
 {% include common/getokBtn.html %}
