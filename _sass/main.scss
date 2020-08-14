@@ -1,3 +1,5 @@
+@import "variables";
+
 @font-face {
     font-family: 'BCSans';
     font-style: normal;
@@ -19,6 +21,22 @@
     font-weight: 700;
     src: url('/assets/fonts/BCSans/BCSans-BoldItalic.woff2') format('woff2'), url('/assets/fonts/BCSans/BCSans-BoldItalic.woff') format('woff');
 }
+
+/* Bootstrap Overrides */
+.btn {
+  font-weight: bold;
+  padding: .3em 2em;
+  color: white !important;
+  &.btn-primary {
+    background-color: $blue-text;
+    border-color: $blue-text;
+    &:hover {
+      background-color: $button-hover;
+    }
+  }
+}
+
+/* Styles for all pages */
 body {
     margin: 0;
     padding: 0;
@@ -27,12 +45,13 @@ body {
     -moz-osx-font-smoothing: grayscale;
     font-size: 1em;
     line-height: 1.25;
+    color: $body-text;
 }
 p {
     font-size: 1em;
     line-height: 1.6;
     margin-bottom: 2.250em;
-    color: #494949;
+    color: $body-text;
 }
 a .btn-primary i {
     color: #fff;
@@ -44,31 +63,11 @@ a .btn-primary i {
     text-decoration: none;
 }
 .content {
-    /* margin-top: 6.938em; this is the height when navigation bar is included*/
-    margin-top: 4.063em;
-    margin-bottom: 3.000em;
+    /* margin-top: 6.56em; this is the height when navigation bar is included*/
+    margin-top: 6.56em;
+    margin-bottom: 6em;
     z-index: 99;
 }
-.pt-6,
-.py-6 {
-  padding-top: 5rem !important;
+.title-text {
+  color: $blue-text;
 }
-.pr-6,
-.px-6 {
-  padding-right: 5rem !important;
-}
-.pb-6,
-.py-6 {
-  padding-bottom: 5rem !important;
-}
-.pl-6,
-.px-6 {
-  padding-left: 5rem !important;
-}
-
-.carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
- }
- .carousel-control-next-icon {
-   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
- }

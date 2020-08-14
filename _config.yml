@@ -18,20 +18,23 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Common Services Showcase  
-bannertitle: Register to start using the messaging and document generation APIs  
-email: NR.CommonServiceShowcase@gov.bc.ca  
-intro: >-
-  In an information technology context, common services consist of software capabilities that can be enabled and cost-effectively used by multiple business units. The characteristics to strive for include self service onboarding, capabilities that can be tried out, and having implemented examples available for review. Keep reading below to see what the Common Service Showcase Team has been working on for you.  
+title: Common Services Showcase
+bannertitle: Common Services
+email: NR.CommonServiceShowcase@gov.bc.ca
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Website for user documentation and marketing of the common services built by the Common Service Showcase Team.
 baseurl: "/common-service-showcase" # the subpath of your site, e.g. /blog
 url: "https://bcgov.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
+collections_dir: collections
 collections:
-  - cards
+  overview:
+  services:
+    output: true
+    permalink: /:collection/:name
+  onboarding:
+    output: true
+    permalink: /:collection/:name
 
 # Exclude from processing.
 # The following items will not be processed, by default.
