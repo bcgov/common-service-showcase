@@ -3,7 +3,7 @@ layout: team
 name: TEAM
 
 title: Our Team
-description: The Common Service Showcase Team was formed to help other development team find and easily onboard to common services that had be built to help reduce the duplication of software capabilities.
+description: The Common Service Showcase Team was formed to help other development teams find and easily onboard to common services to reduce the duplication of software capabilities.
 ---
 After our first year we have learned a few valuable lessons:
 
