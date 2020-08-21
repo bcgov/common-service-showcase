@@ -20,9 +20,8 @@
 <!-- If you're unsure about any of these, don't hesitate to ask. We're here to help! -->
 
 - [ ] I have read the [CONTRIBUTING](CONTRIBUTING.md) doc
-- [ ] I have checked that unit tests pass locally with my changes
-- [ ] I have added tests that prove my fix is effective or that my feature works
 - [ ] I have added necessary documentation (if appropriate)
+- [ ] I built and run locally to ensure no styles or formats break (if applicable)
 
 ## Further comments
 

@@ -98,20 +98,37 @@
 
 /* List of clickable cards */
 .service-card-list {
-  i {
-    color: $blue-text-light;
-  }
-  a i:hover{
-    color: $icon-hover;
-  }
   .card {
+    transition: box-shadow 0.3s ease-in-out;
     margin-bottom: 2rem;
-    box-shadow: 0 0 25px 0 rgba(214, 214, 214, 0.5);
-    border: solid 1px #f2f2f2;
+    border: solid 1px #e2e2e2;
   }
   .card-title {
     font-size: 1.125rem;
     margin-bottom: 3rem;
+  }
+  .linked-card {
+    .card {
+      color: $body-text;
+      i {
+        color: $blue-text-light;
+      }
+    }
+    &:hover {
+      color: $body-text;
+      text-decoration: none;
+      .card {
+        box-shadow: 10px 10px 39px 0px rgba(158,150,158,1);
+        i {
+          color: $icon-hover;
+        }
+      }
+    }
+    &:active {
+      .card {
+        box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.2);
+      }
+    }
   }
   .service-onboard {
     list-style-type: none;

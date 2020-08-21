@@ -5,6 +5,10 @@ name: TEAM
 title: Our Team
 description: The Common Service Showcase Team was formed to help other development teams find and easily onboard to common services to reduce the duplication of software capabilities.
 ---
+<div class="text-center mb-5">
+    <img src="{{ site.baseurl }}/assets/images/csst-team.png" alt="team" title="Our Team">
+</div>
+
 After our first year we have learned a few valuable lessons:
 
 1. Teams don’t want to have to use a large platform service when all they need is one small piece of it.

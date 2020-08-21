@@ -69,25 +69,27 @@ name: HOME
     <div class="row">
       {% for card in commonServices %}
       <div class="col-md-6">
-        <div class="card">
-          <div class="card-body">
-            <div class="row">
-              <div class="col-10 col-xl-11">
-                <h3 class="card-title">{{ card.title }} ({{ card.name }})</h3>
+        <a class="linked-card" href="{{ site.baseurl }}{{ card.url }}.html">
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-10 col-xl-11">
+                  <h3 class="card-title">{{ card.title }} ({{ card.name }})</h3>
+                </div>
+                <div class="col-2 col-xl-1 text-right">
+                  <i class="fa fa-lg fa-arrow-circle-right"></i>
+                </div>
               </div>
-              <div class="col-2 col-xl-1 text-right">
-                <a href="{{ site.baseurl }}{{ card.url }}.html"><i class="fa fa-lg fa-arrow-circle-right"></i></a>
-              </div>
+              <strong>Onboarding Options:</strong>
+              <br />
+              <ul class="service-onboard">
+                {% for onb in card.onboard %}
+                  <li>{{ onb }}</li>
+                {% endfor %}
+              </ul>
             </div>
-            <strong>Onboarding Options:</strong>
-            <br />
-            <ul class="service-onboard">
-              {% for onb in card.onboard %}
-                <li>{{ onb }}</li>
-              {% endfor %}
-            </ul>
           </div>
-        </div>
+        </a>
       </div>
       {% endfor %}
     </div>

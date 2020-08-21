@@ -18,6 +18,9 @@ urls:
   showcase: https://mssc.pathfinder.gov.bc.ca/mssc/
   postman: https://bcgov.github.io/common-service-showcase/assets/files/common_services_postman_collection.json
   postmanHelp: https://bcgov.github.io/common-service-showcase/assets/files/common_services_postman_readme.md
+pictures:
+  icon: missy.svg
+  header: ches.svg
 
 showcaseDescription: >-
   The Messaging Service Showcase  (MSSC) demonstrates how an application can have messaging functionality by calling an API. In this case, it demonstrates how to call two different common messaging APIs: CMSG and CHES.
