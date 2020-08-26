@@ -17,7 +17,7 @@ urls:
   postman: n/a
   postmanHelp: n/a
 pictures:
-  icon:
+  icon: cheffy.svg
   header:
 
 showcaseDescription: >-
