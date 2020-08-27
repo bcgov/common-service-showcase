@@ -18,7 +18,7 @@ urls:
   postmanHelp: n/a
 pictures:
   icon: cheffy.svg
-  header:
+  header: chefs.svg
 
 showcaseDescription: >-
   A demonstration for how to use the Common Hosted Forms Service (CHEFS) will be developed. Options for developers to directly call the API are not available at this time.
