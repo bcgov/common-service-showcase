@@ -35,6 +35,14 @@
   }
 }
 
+/* page header with inline mascot image */
+h2 .mascot{
+  height: 7rem;
+  @media (max-width: 768px) {
+    height: 3rem;
+  }
+}
+
 /* The tabled list of service/onboarding features */
 .feature-card {
   margin: 0 2em 6em 2em;
