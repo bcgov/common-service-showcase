@@ -3,13 +3,17 @@ layout: default
 ---
 <div class="page-header">
   <h2 class="text-center">
+    {% if page.pictures.icon  %}
     <img class="img-fluid mr-3" src="{{ site.baseurl }}/assets/images/{{ page.pictures.icon }}" alt="mascot">
+    {% endif %}
     {{ page.title }} ({{ page.name }})
   </h2>
   <div class="page-description">
     <div class="container page-description-content">
       <div class="text-center">
+        {% if page.pictures.header %}
         <img class="img-fluid mr-3" src="{{ site.baseurl }}/assets/images/{{ page.pictures.header }}" alt="service">
+        {% endif %}
       </div> <br>
       {{ page.description }}
     </div>
