@@ -86,6 +86,14 @@ h2 .mascot{
   }
 }
 
+/* Style specific to the chefs service page */
+ul.feature-list {
+  padding-left: 1rem;
+  p {
+    margin-bottom: 1rem;
+  }
+}
+
 /* Style specific to the onboarding pages */
 .onboarding-content {
   h4, h5, h6 {

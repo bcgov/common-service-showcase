@@ -1,21 +1,16 @@
 ---
-layout: service
+layout: chefs
 type: service
 
 name: CHEFS
-title: Common Hosted Forms Service [in progress]
+title: Common Hosted Form Service
 order: 3
 description: >-
-  A hosted service for webforms. It enables form builders to design and create their forms with drag and drop form components. Form administrators can publish their forms and provide the form link to people to submit data to the forms service. The form admin can review form submissions or edit submitted data. Use Business Intelligence tools to create charts and graphs to visualize your information on dashboards.
-
-onboard: ['To be confirmed']
-onboardDescription: To be confirmed
+   At last! A user-friendly, hosted service for teams to create and publish their own web forms.   Complex form designs, custom access control - made simple and maintained by the Common Services team; available for your next web form project.
+intro: >-
+  We've made things easy for you!
 urls:
   github: https://github.com/bcgov/common-hosted-form-service
-  docs: https://chefs-master-wxpbtr-prod.pathfinder.gov.bc.ca/api/v1/docs
-  showcase: https://chefs.pathfinder.gov.bc.ca/chefs/
-  postman: n/a
-  postmanHelp: n/a
 pictures:
   icon: cheffy.svg
   header: chefs.svg

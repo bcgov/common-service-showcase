@@ -1,0 +1,60 @@
+---
+layout: default
+---
+<div class="page-header">
+  <h2 class="text-center">
+    {% if page.pictures.icon  %}
+    <img class="img-fluid mr-3 mascot" src="{{ site.baseurl }}/assets/images/{{ page.pictures.icon }}" alt="mascot">
+    {% endif %}
+    {{ page.title }} ({{ page.name }}) - Beta
+  </h2>
+  <div class="page-description">
+    <div class="container page-description-content">
+      <div class="text-center">
+        {% if page.pictures.header %}
+        <img class="img-fluid mr-3" src="{{ site.baseurl }}/assets/images/{{ page.pictures.header }}" alt="service">
+        {% endif %}
+      </div> <br>
+      {{ page.description }}
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-6 mb-4">
+      <h4 class="mb-4"><strong>Features include:</strong></h4>
+
+      <ul class="feature-list my-2">
+        <li><strong>Drag-and-drop form designer</strong>
+          <p>Drag and Drop form components onto your form. Export and import your form design templates</p>
+        </li>
+        <li><strong>Form data review</strong>
+          <p>View and export form submission data</p>
+        </li>
+        <li><strong>Access controls</strong>
+          <p>Choose who can access your forms, secured with IDIR (and more options coming soon)</p>
+        </li>
+        <li><strong>Team management</strong>
+          <p>Configure role-based access for your team to manage forms and review submissions</p>
+        </li>
+        <li><strong>Notifications</strong>
+          <p>Receive Emails when your forms are submitted; Provide form respondents with email receipts</p>
+        </li>
+        <li><strong>Configurable form actions</strong>
+          <p>We can help configure form actions and custom components like the BC Orgbook</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-md-6">
+      <h4 class="mb-4"><strong>Try CHEFS today!</strong></h4>
+      <p>Visit <a target="_blank" href="https://chefs.pathfinder.gov.bc.ca/app/">https://chefs.pathfinder.gov.bc.ca/app/</a> to start
+        building your first form.<br /><br />
+
+        For help using the application please see our <a target="_blank" href="https://apps.nrs.gov.bc.ca/int/confluence/x/h7eeB">CHEFS User Guide</a> or <a href="../team.html">contact the Common Services Team</a> for more information.</p>
+    </div>
+
+  </div>
+</div>
