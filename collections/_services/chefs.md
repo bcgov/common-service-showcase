@@ -6,7 +6,7 @@ name: CHEFS
 title: Common Hosted Form Service
 order: 3
 description: >-
-   At last! A user-friendly, hosted service for teams to create and publish their own web forms.   Complex form designs, custom access control - made simple and maintained by the Common Services team; available for your next web form project.
+   At last! A user-friendly, hosted service for teams to create and publish their own web forms.   Complex form designs, custom access control, secure and highly available - made simple and maintained by the Common Services team; available for your next web form project.
 intro: >-
   We've made things easy for you!
 urls:
