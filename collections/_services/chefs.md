@@ -4,11 +4,13 @@ type: service
 
 name: CHEFS
 title: Common Hosted Form Service
+version: '<span class="badge badge-pill badge-warning">Beta</span>'
 order: 3
 description: >-
-   At last! A user-friendly, hosted service for teams to create and publish their own web forms.   Complex form designs, custom access control, secure and highly available - made simple and maintained by the Common Services team; available for your next web form project.
+   At last! A user-friendly, hosted service for teams to create and publish their own web forms.   Complex form designs, custom access control, secure and highly available - made simple and maintained by the Common Services team and available for your next web form project.
 intro: >-
   We've made things easy for you!
+onboard: ['Visit https://chefs.pathfinder.gov.bc.ca/app/ to start building your first form.']
 urls:
   github: https://github.com/bcgov/common-hosted-form-service
 pictures:
