@@ -34,7 +34,7 @@ npmPackages:
     url: https://www.npmjs.com/package/@bcgov/file-cache
     description: Library to store files locally identified by a hash of the file contents. A sub-directory is created and identified by a hash of the file, the original file is then stored under the hash sub-directory. The hash is created when writing the binary contents to disk. Each file will generate a unique hash.
   - name: Carbone Render
-    url: https://hub.docker.com/r/bcgovimages/alpine-node-libreoffice
+    url: https://www.npmjs.com/package/@bcgov/carbone-render
     description: Library to generate a document from an existing template and JSON data. This is a wrapper around carbone, please refer to their documentation for more detail.
   - name: Carbone Copy API
     url: https://www.npmjs.com/package/@bcgov/carbone-copy-api
