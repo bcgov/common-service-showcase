@@ -1,5 +1,5 @@
 ---
-layout: chefs
+layout: service
 type: service
 
 name: CHEFS
