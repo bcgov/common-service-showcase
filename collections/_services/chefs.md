@@ -8,24 +8,21 @@ version: '<span class="badge badge-pill badge-warning">Beta</span>'
 order: 3
 description: >-
    At last! A user-friendly, hosted service for teams to create and publish their own web forms.   Complex form designs, custom access control, secure and highly available - made simple and maintained by the Common Services team and available for your next web form project.
-intro: >-
-  We've made things easy for you!
-onboard: ['Visit https://chefs.pathfinder.gov.bc.ca/app/ to start building your first form.']
+onboard: ['Hosted Service', 'Self-hosted']
+onboardDescription: We provide a <em>Hosted Service</em> as well as documented <em>open-source code</em> for hosting your own form service.
+featureList: |
+  - **User-friendly form designer** - Drag and Drop form components onto your form; Export and import your form design templates
+  - **Form data review** - view and export form submission data
+  - **Access controls** - choose who can access your forms, secured with IDIR (and more options coming soon)
+  - **Team management** - configure role-based access for your team to manage forms and review submissions
+  - **Notifications** - receive Emails when your forms are submitted; Provide form respondents with email receipts
+  - **Configurable form actions** - we can help configure form actions and custom components like the <a href="https://www.orgbook.gov.bc.ca/en/home" target="_blank">BC Orgbook</a>
 urls:
+  hosted: https://chefs.pathfinder.gov.bc.ca/app/
   github: https://github.com/bcgov/common-hosted-form-service
+  docs: https://chefs.pathfinder.gov.bc.ca/app/api/v1/docs
+  guide: https://github.com/bcgov/common-hosted-form-service/wiki/User-Guide
 pictures:
   icon: cheffy.svg
   header: chefs.svg
-
-showcaseDescription: >-
-  A demonstration for how to use the Common Hosted Form Service (CHEFS) will be developed. Options for developers to directly call the API are not available at this time.
 ---
-## Planned Capabilities
-- Design and create their forms
-- Publish/unpublish or delete forms
-- Forms versions are tracked and used to display the data submitted with that version of the form
-- Option to publish forms for public or authenticated access to submit forms
-- Authenticated and Authorized user ability to review form submissions
-- Set the status of a form submission
-- Assign a form submission to another user to take action on it
-- Send event based email notifications
