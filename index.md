@@ -40,7 +40,7 @@ name: HOME
   </div>
 
   <div class="mb-3 mt-5 px-5">
-    <p>Common Components are a set of reusable digital building blocks that solve common problems across government. We aim to promote, curate, develop, and make it easy to onboard to implement common components which will <strong><em>reduce costs, accelerate development, and promote consistency</em></strong> and supportability of BC Gov digital services.</p>
+    <p>This website provides information relating to a range of services and open-source software components created by the Common Services Showcase team. We aim to promote, curate, develop, and make it easy to onboard to our hosted services or integrate our micro-services and common components into your own applications. The goal is to <strong><em>reduce costs, accelerate development, and promote consistency</em></strong> and supportability of BC Gov digital services.</p>
     <div class="row">
       {% for card in iconCards %}
       <div class="icon-list col-sm-4">

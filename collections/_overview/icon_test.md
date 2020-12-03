@@ -6,4 +6,4 @@ img:
   path: /assets/images/laptop-code.svg
   alt: test
 ---
-Test capabilities on a pre-built app
+Test our services on a hosted instance or showcase app
