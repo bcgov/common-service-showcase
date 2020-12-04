@@ -6,4 +6,4 @@ img:
   path: /assets/images/find_component.svg
   alt: find
 ---
-Find a component for implementing capability
+Find a component or service that meets your business needs
