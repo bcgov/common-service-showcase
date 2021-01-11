@@ -11,9 +11,9 @@ description: >-
 onboard: ['Hosted Service']
 onboardDescription: We provide a <em>Hosted Service</em> as well as documented <em>open-source code</em> for hosting your own form service.
 urls:
-  hosted: https://chefs.pathfinder.gov.bc.ca/app/
+  hosted: https://chefs.nrs.gov.bc.ca/app/
   github: https://github.com/bcgov/common-hosted-form-service
-  docs: https://chefs.pathfinder.gov.bc.ca/app/api/v1/docs
+  docs: https://chefs.nrs.gov.bc.ca/app/api/v1/docs
   guide: https://github.com/bcgov/common-hosted-form-service/wiki/User-Guide
 pictures:
   icon: cheffy.svg
