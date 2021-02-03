@@ -12,7 +12,7 @@ onboard: ['API Access', 'DockerHub', 'NPM']
 onboardDescription: We provide <em>API Access, Docker Images, and NPM Packages</em> for the Common Document Generation Service.
 urls:
   github: https://github.com/bcgov/common-document-generation-service
-  docs: https://cdogs.pathfinder.gov.bc.ca/api/v2/docs
+  docs: https://cdogs.nrs.gov.bc.ca/api/v2/docs
   showcase: https://dgrsc.apps.silver.devops.gov.bc.ca/dgrsc/
   postman: https://bcgov.github.io/common-service-showcase/assets/files/common_services_postman_collection.json
   postmanHelp: https://bcgov.github.io/common-service-showcase/assets/files/common_services_postman_readme.md
