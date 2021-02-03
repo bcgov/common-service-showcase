@@ -11,8 +11,8 @@ Please review the API documents before proceeding. The more familiar you are wit
 | CHES | [github](https://github.com/bcgov/common-hosted-email-service) |
 |  | [v1 API specification](https://ches.pathfinder.gov.bc.ca/api/v1/docs) |
 | CDOGS | [github](https://github.com/bcgov/common-document-generation-service) |
-|  | [v1 API specification](https://cdogs.pathfinder.gov.bc.ca/api/v1/docs#tag/DocGen) |
-|  | [v2 API specification](https://cdogs.pathfinder.gov.bc.ca/api/v2/docs#tag/DocGen) |
+|  | [v1 API specification](https://cdogs.nrs.gov.bc.ca/api/v1/docs#tag/DocGen) |
+|  | [v2 API specification](https://cdogs.nrs.gov.bc.ca/api/v2/docs#tag/DocGen) |
 
 ## Postman
 If you have not used [Postman](https://www.postman.com), we recommend that you [familiarize](https://learning.postman.com) yourself with it. You can download it [here](https://www.postman.com/downloads/).
@@ -37,19 +37,19 @@ By default, the hosts are set to the DEV environment.
 | DEV | URL |
 | --- | --- |
 | auth\_host | https://dev.oidc.gov.bc.ca |
-| cdogs\_host | https://cdogs-dev.pathfinder.gov.bc.ca |
+| cdogs\_host | https://cdogs-dev.apps.silver.devops.gov.bc.ca |
 | ches\_host | https://ches-dev.pathfinder.gov.bc.ca |
 
 | TEST | URL |
 | --- | --- |
 | auth\_host | https://test.oidc.gov.bc.ca |
-| cdogs\_host | https://cdogs-test.pathfinder.gov.bc.ca |
+| cdogs\_host | https://cdogs-test.apps.silver.devops.gov.bc.ca |
 | ches\_host | https://ches-test.pathfinder.gov.bc.ca |
 
 | PROD | URL |
 | --- | --- |
 | auth\_host | https://oidc.gov.bc.ca |
-| cdogs\_host | https://cdogs.pathfinder.gov.bc.ca |
+| cdogs\_host | https://cdogs.nrs.gov.bc.ca |
 | ches\_host | https://ches.pathfinder.gov.bc.ca |
 
 ## Overview
