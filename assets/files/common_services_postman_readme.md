@@ -9,7 +9,7 @@ Please review the API documents before proceeding. The more familiar you are wit
 | Service | Links |
 | --- | --- |
 | CHES | [github](https://github.com/bcgov/common-hosted-email-service) |
-|  | [v1 API specification](https://ches.pathfinder.gov.bc.ca/api/v1/docs) |
+|  | [v1 API specification](https://ches.nrs.gov.bc.ca/api/v1/docs) |
 | CDOGS | [github](https://github.com/bcgov/common-document-generation-service) |
 |  | [v1 API specification](https://cdogs.nrs.gov.bc.ca/api/v1/docs#tag/DocGen) |
 |  | [v2 API specification](https://cdogs.nrs.gov.bc.ca/api/v2/docs#tag/DocGen) |
@@ -38,19 +38,19 @@ By default, the hosts are set to the DEV environment.
 | --- | --- |
 | auth\_host | https://dev.oidc.gov.bc.ca |
 | cdogs\_host | https://cdogs-dev.apps.silver.devops.gov.bc.ca |
-| ches\_host | https://ches-dev.pathfinder.gov.bc.ca |
+| ches\_host | https://ches-dev.apps.silver.devops.gov.bc.ca |
 
 | TEST | URL |
 | --- | --- |
 | auth\_host | https://test.oidc.gov.bc.ca |
 | cdogs\_host | https://cdogs-test.apps.silver.devops.gov.bc.ca |
-| ches\_host | https://ches-test.pathfinder.gov.bc.ca |
+| ches\_host | https://ches-test.apps.silver.devops.gov.bc.ca |
 
 | PROD | URL |
 | --- | --- |
 | auth\_host | https://oidc.gov.bc.ca |
 | cdogs\_host | https://cdogs.nrs.gov.bc.ca |
-| ches\_host | https://ches.pathfinder.gov.bc.ca |
+| ches\_host | https://ches.nrs.gov.bc.ca |
 
 ## Overview
 Once you have set the host and client id/secret variables, you can begin running the API calls. The order of the calls is very important, as each call will set variables that are used in subsequent calls. In particular, you will always want to run "Request a Token" first.  If you encounter any 401 responses, try getting a new token.
