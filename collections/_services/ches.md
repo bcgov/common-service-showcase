@@ -14,7 +14,7 @@ onboard: ['API Access']
 onboardDescription: We provide <em>API Access</em> for the Common Hosted Email Service.
 urls:
   github: https://github.com/bcgov/common-hosted-email-service
-  docs: https://ches.pathfinder.gov.bc.ca/api/v1/docs
+  docs: https://ches.nrs.gov.bc.ca/api/v1/docs
   showcase: https://mssc.pathfinder.gov.bc.ca/mssc/
   postman: https://bcgov.github.io/common-service-showcase/assets/files/common_services_postman_collection.json
   postmanHelp: https://bcgov.github.io/common-service-showcase/assets/files/common_services_postman_readme.md
