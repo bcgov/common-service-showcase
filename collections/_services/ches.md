@@ -15,7 +15,7 @@ onboardDescription: We provide <em>API Access</em> for the Common Hosted Email S
 urls:
   github: https://github.com/bcgov/common-hosted-email-service
   docs: https://ches.nrs.gov.bc.ca/api/v1/docs
-  showcase: https://mssc.pathfinder.gov.bc.ca/mssc/
+  showcase: https://chess.apps.silver.devops.gov.bc.ca/app/
   postman: https://bcgov.github.io/common-service-showcase/assets/files/common_services_postman_collection.json
   postmanHelp: https://bcgov.github.io/common-service-showcase/assets/files/common_services_postman_readme.md
 pictures:
@@ -23,7 +23,7 @@ pictures:
   header: ches.svg
 
 showcaseDescription: >-
-  The Messaging Service Showcase  (MSSC) demonstrates how an application can have messaging functionality by calling an API. In this case, it demonstrates how to call two different common messaging APIs: CMSG and CHES.
+  The Common Hosted Email Service Showcase (CHESS) demonstrates how an application can have messaging functionality by calling an API. In this case, it demonstrates how to call and leverage the features offered in CHES.
 ---
 - Send emails with attachments and special business tagging
 - Schedule for delayed delivery, with ability to cancel
