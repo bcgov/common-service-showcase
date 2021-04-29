@@ -4,7 +4,7 @@ type: service
 
 name: CHEFS
 title: Common Hosted Form Service
-version: '<span class="badge badge-pill badge-warning">Beta</span>'
+version: ''
 order: 3
 description: >-
    At last! A user-friendly, hosted service for teams to create and publish their own web forms.   Complex form designs, custom access control, secure and highly available - made simple and maintained by the Common Services team and available for your next web form project.
