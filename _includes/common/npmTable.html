@@ -8,10 +8,18 @@
     <div class="card-body">
       {% for package in include.param.npmPackages %}
       <div class="row no-gutters">
-        <div class="col-sm-3">{{ package.name }}</div>
-        <div class="col-sm-9">
-          {{ package.description }}
+        <div class="col-sm-4">{{ package.name }}</div>
+        <div class="col-sm-8">
+          {% if package.description %}
+            {{ package.description }}
           <hr>
+          {% endif %}
+          {% if package.badges %}
+            {% for badge in package.badges %}
+              <img src="{{ badge }}" />
+            {% endfor %}
+          <hr>
+          {% endif %}
           <a href="{{ package.url }}" target="_blank">{{ package.url }}
             <i class="fas fa-external-link-square-alt"></i>
           </a>
