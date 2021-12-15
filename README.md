@@ -43,7 +43,6 @@ Open a console window with directory at root of this repo and run:
 
 ```sh
 gem install bundler
-gem install jekyll
 bundle install
 ```
 

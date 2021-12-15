@@ -15,6 +15,7 @@ urls:
   github: https://github.com/bcgov/common-hosted-form-service
   docs: https://chefs.nrs.gov.bc.ca/app/api/v1/docs
   guide: https://github.com/bcgov/common-hosted-form-service/wiki/User-Guide
+  fider: https://chefs-fider.apps.silver.devops.gov.bc.ca/
 pictures:
   icon: cheffy.svg
   header: chefs.svg
