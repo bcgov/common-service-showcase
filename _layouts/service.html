@@ -123,6 +123,7 @@ layout: default
           <div class="col-sm-3">Feature List</div>
           <div class="col-sm-9">{{ content }}</div>
         </div>
+        {% if page.urls.fider  %}
         <div class="row no-gutters">
           <div class="col-sm-3">Feedback</div>
           <div class="col-sm-9">
@@ -131,6 +132,7 @@ layout: default
             </a>
           </div>
         </div>
+        {% endif %}
         <div class="row no-gutters">
           <div class="col-sm-3">Hosted URL</div>
           <div class="col-sm-9">
