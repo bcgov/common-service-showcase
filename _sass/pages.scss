@@ -86,16 +86,8 @@ h2 .mascot{
   }
 }
 
-/* Style specific to the chefs service page */
-ul.feature-list {
-  padding-left: 1rem;
-  p {
-    margin-bottom: 1rem;
-  }
-}
-
-/* Style specific to the onboarding pages */
-.onboarding-content {
+/* content styles */
+.unstructured-content, .onboarding-content, .team-content {
   h4, h5, h6 {
     font-weight: bold;
   }
@@ -108,6 +100,26 @@ ul.feature-list {
     margin-top: 3rem;
     margin-bottom: 3rem;
   }
+  ul {
+    margin-bottom: 1.5rem;
+  }
+  a {
+    color: $blue-text-light;
+  }
+}
+
+/* Style specific to the 'unstructured' service pages (eg: chefs) */
+.unstructured-content {
+  p {
+    margin-bottom: 1rem;
+  }
+  li {
+    margin-bottom: .5rem;
+  }
+}
+
+/* Style specific to the onboarding pages */
+.onboarding-content {
   .feature-card .onboard-table-desc {
     display: none;
   }
@@ -124,19 +136,5 @@ ul.feature-list {
   }
   strong {
     color: $blue-text;
-  }
-}
-
-.onboarding-content, .team-content {
-  h4, h5, h6 {
-    font-weight: bold;
-  }
-  h4 {
-    font-size: 1.25rem;
-    color: $blue-text;
-    margin-bottom: 1.25rem;
-  }
-  a {
-    color: $blue-text-light;
   }
 }
