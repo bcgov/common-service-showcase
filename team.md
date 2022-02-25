@@ -2,35 +2,81 @@
 layout: team
 name: TEAM
 
-title: Our Team
-description: The Common Service Showcase Team was formed to help other development teams find and easily onboard to common services to reduce the duplication of software capabilities.
+title: Meet the Common Services Showcase Team
+description: Founded in 2019, we are a cross-functional agile team, building on the work done by former and external contributors. Our team focuses on inspiring innovation for our customers with convenient and reliable Common Services.​<br /><br />We aim to help other development teams incorporate common services into their applications or take advantage of our hosted services. Using common services saves time, money and reduces software duplication.
+
 ---
 <div class="text-center mb-5">
-    <img src="{{ site.baseurl }}/assets/images/csst-team.png" alt="team" title="Our Team">
+    <div class="person">
+        <div class="person-crop">
+            <img src="{{ site.baseurl }}/assets/images/team/sha.png" class="rounded" />
+        </div>
+        <h6>Sharolyn Hurley</h6>
+        <span>Product Manager</span>
+    </div>
+    <div class="person">
+        <div class="person-crop">
+            <img src="{{ site.baseurl }}/assets/images/team/joe.png" class="rounded" />
+        </div>
+        <h6>Joe Onireti</h6>
+        <span>Scrum Master</span>
+    </div>
+    <div class="person">
+        <div class="person-crop">
+            <img src="{{ site.baseurl }}/assets/images/team/tim.png" class="rounded" />
+        </div>
+        <h6>Tim Csaky</h6>
+        <span>Developer</span>
+    </div>
+    <div class="person">
+        <div class="person-crop">
+            <img src="{{ site.baseurl }}/assets/images/team/jer.png" class="rounded" />
+        </div>
+        <h6>Jeremy Ho</h6>
+        <span>Developer</span>
+    </div>
+    <div class="person">
+        <div class="person-crop">
+            <img src="{{ site.baseurl }}/assets/images/team/kyl.png" class="rounded" />
+        </div>
+        <h6>Kyle Morel</h6>
+        <span>Developer</span>
+    </div>
+    <div class="person">
+        <div class="person-crop">
+            <img src="{{ site.baseurl }}/assets/images/team/mic.png" class="rounded" />
+        </div>
+        <h6>Michael Chung</h6>
+        <span>Developer</span>
+    </div>
+    <div class="person">
+        <div class="person-crop">
+            <img src="{{ site.baseurl }}/assets/images/team/dav.png" class="rounded" />
+        </div>
+        <h6>David Cusack</h6>
+        <span>UX Practitioner</span>
+    </div>
 </div>
 
-After our first year we have learned a few valuable lessons:
+<h4>Contact us</h4>
 
-1. Teams don’t want to have to use a large platform service when all they need is one small piece of it.
-1. Teams want the flexibility to decide how to use the common component. That might mean they just want to make a web service call.  But it could also be the case that they want to host their own instance or assemble the various code packages themselves and combine them with other custom-built packages. Allowing for those options will make our common components more useful.
-1. If it costs more to onboard to the service and start using the common component than to build a similar component themselves, then they are just going to build it themselves. So, there must be an immediate ROI for the teams that are going to use it.
-1. Don’t start building something without having your first customer lined up.
-1. Your first customer should understand that the goal is to build something that will be used by others, so their unique requirements and business specific configurations will be kept separate from the common component.
-1. Relentlessly defend your approach to build and maintain a modernized technology architecture (e.g. open source, microservices, cloud native, serverless). A development team will run away from anything else. Common components will be left on the shelf if they’re yesterday’s tools. This means you must keep your components up to date.
-1. If you’re not up to the task of providing operational support for the lifetime of the component, then you are better off not building the tool at all.
-1. As soon as you’re done building something, people will come and tell you about a product that already does that.  Don’t worry. Just collect the feedback and keep moving forward. There will always be other tools that do similar things. Having choices is ok.
-
-#### Contact us
-
-If you have any feedback or questions, please reach out to us.
-
-![email]({{ site.baseurl }}/assets/images/email.svg "Email Us")
-**Email:** NR.CommonServiceShowcase@gov.bc.ca
-
-
-![address]({{ site.baseurl }}/assets/images/map.svg "Our Address")
-**Address:** 2975 Jutland Rd.
-
-
-![rocketchat]({{ site.baseurl }}/assets/images/rocketchat-brands.svg "Contact Us on Rocket Chat")
-**Rocket Chat:** #nr-common-services-showcase
+<ul>
+    <li>
+        <img src="{{ site.baseurl }}/assets/images/rocketchat-brands.svg" alt="Contact Us on Rocket Chat" />
+        <span>
+            Find developer support on our Rocket.Chat channel <a href="https://chat.developer.gov.bc.ca/channel/nr-common-services-showcase" target="_blank">#nr-common-services-showcase</a>
+        </span>
+    </li>
+    <li>
+        <img src="{{ site.baseurl }}/assets/images/email.svg" alt="Email Us" />
+        <span>
+            &nbsp;Email: <a href="mailto:nr.commonserviceshowcase@gov.bc.ca">NR.CommonServiceShowcase@gov.bc.ca</a>
+        </span>
+    </li>
+    <li>
+        <img src="{{ site.baseurl }}/assets/images/ms-teams.svg" alt="CHEFS Support" />
+        <span>
+            Join the <a href="https://teams.microsoft.com/l/channel/19%3a34b9d4b4deb54eebaa9be8bc1ccf02f7%40thread.tacv2/CHEFS?groupId=bef8086f-20c7-43a4-bd07-29ce764e818c&tenantId=6fdb5200-3d0d-4a8a-b036-d3685e359adc" target="_blank">CHEFS community MS Teams channel</a>
+        </span>
+    </li>
+</ul>

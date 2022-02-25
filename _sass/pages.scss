@@ -127,14 +127,40 @@ h2 .mascot{
 
 /* Style specific to the team */
 .team-content {
-  ol {
-    line-height: 32px;
-    padding-bottom: 2rem;
-  }
-  img {
-    margin-right: 1rem;
-  }
+
   strong {
     color: $blue-text;
+  }
+
+  ul {
+    padding: 1rem 0;
+
+    li {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .person {
+    display: inline-block;
+    padding: 1rem;
+    .person-crop {
+      width: 200px;
+      height: 200px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 50%;
+      border: 10px solid $bcgov-yellow;
+      img {
+        display: inline;
+        margin: 0 auto;
+        height: 100%;
+        width: auto;
+      }
+    }
+    h6 {
+      margin-top: 1rem;
+    }
   }
 }
