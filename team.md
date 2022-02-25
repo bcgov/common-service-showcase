@@ -3,7 +3,7 @@ layout: team
 name: TEAM
 
 title: Meet the Common Services Showcase Team
-description: Since 2019, we have been a cross-functional agile team, building on the work done by former and external contributors. We aim to help other development teams incorporate common services into their applications or take advantage of our hosted services. Using common services saves time, money and reduces software duplication. By improving our offerings through continuous improvement, we hope to build and maintain robust products that meet the long-term needs of our clients.
+description: Founded in 2019, we are a cross-functional agile team, building on the work done by former and external contributors. Our team focuses on inspiring innovation for our customers with convenient and reliable Common Services.​<br /><br />We aim to help other development teams incorporate common services into their applications or take advantage of our hosted services. Using common services saves time, money and reduces software duplication. By improving our offerings through continuous improvement, we hope to build and maintain robust products that meet the long-term needs of our clients.
 
 ---
 <div class="text-center mb-5">
