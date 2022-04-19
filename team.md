@@ -44,9 +44,9 @@ description: Founded in 2019, we are a cross-functional agile team, building on 
     </div>
     <div class="person">
         <div class="person-crop">
-            <img src="{{ site.baseurl }}/assets/images/team/mic.png" class="rounded" />
+            <img src="{{ site.baseurl }}/assets/images/team/luc.png" class="rounded" />
         </div>
-        <h6>Michael Chung</h6>
+        <h6>Lucas O'Neil</h6>
         <span>Developer</span>
     </div>
     <div class="person">
