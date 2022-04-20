@@ -10,7 +10,9 @@ description: >-
   COMS is a secure REST API that lets you connect your application to an S3 bucket.
   In S3, you can store and share files, images, and documents with co-workers, partners, or the public.
 
-onboard: ['Self Hosted Service', 'DockerHub']
+onboard:
+  - 'Self Hosted Service'
+  - 'DockerHub'
 onboardDescription: We provide <em>Docker Images</em> for hosting your own Common Object Management Storage Service.
 urls:
   github: https://github.com/bcgov/common-object-management-service/
