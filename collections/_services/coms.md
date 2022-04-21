@@ -23,7 +23,7 @@ showcaseDescription: >-
   The Common Object Management Service Showcase (COMSS) is a demonstration of how an application can use S3 to manage and share objects within government or with the public.
 
 dockerImages:
-  - name: Image
+  - name: Common Object Management Service
     url: https://hub.docker.com/r/bcgovimages/common-object-management-service/
     description: This image provides a fast way to set up an object management API with a range of features focusing on object management, permission control, and object discovery.
     badges:
