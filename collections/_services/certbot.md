@@ -25,7 +25,7 @@ urls:
 dockerImages:
   - name: Certbot
     url: https://hub.docker.com/r/bcgovimages/certbot/
-    description: This image provides ???
+    description: This image provides an automated way of managing and updating TLS certificates onto OpenShift Routes.
     badges:
       - https://img.shields.io/docker/v/bcgovimages/certbot.svg?sort=semver
       - https://img.shields.io/docker/pulls/bcgovimages/certbot.svg
@@ -38,8 +38,6 @@ dockerImages:
 - Leverages and extends [https://certbot.eff.org/](https://certbot.eff.org/){:target="_blank"} for managing (create/renew) certificates
 - Should only be executed on Openshift Container Platform
 - Creates an OpenShift CronJob which will run on a regular schedule for renewing TLS certificates
-  - The CronJob will manage all Route objects annotated with the label certbot-managed=true
-  - One certificate will be issued/renewed for all the managed hosts/domains
 - If a cert is created/renewed, patch the new certificate to the managed OpenShift routes
 
 #### Self-hosted
