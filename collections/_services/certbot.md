@@ -18,7 +18,7 @@ contentStyle: unstructured
 onboard:
   - 'Self Hosted Service'
   - 'DockerHub'
-onboardDescription: Deploy on OpenShift using the docker image.
+onboardDescription: Deploy on OpenShift using the <em>Docker Image</em>.
 urls:
   github: https://github.com/BCDevOps/certbot
   docs: https://github.com/BCDevOps/certbot/blob/master/README.md
