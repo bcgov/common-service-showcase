@@ -29,3 +29,8 @@ For each service that has docker images as an onboard type. Figure out how... --
 | where_exp:"service", "service.name == 'COMS'"
 | first %}
 {% include common/dockerTable.html param=coms %}
+
+{% assign certbot = site.services
+| where_exp:"service", "service.title == 'Certbot'"
+| first %}
+{% include common/dockerTable.html param=certbot %}
