@@ -7,54 +7,51 @@ description: Founded in 2019, we are a cross-functional agile team, building on 
 
 ---
 <div class="text-center mb-5">
-    <div class="person">
-        <div class="person-crop">
-            <img src="{{ site.baseurl }}/assets/images/team/sha.png" class="rounded" />
+    <div>
+        <div class="person">
+            <div class="person-crop">
+                <img src="{{ site.baseurl }}/assets/images/team/sha.png" class="rounded" />
+            </div>
+            <h6>Sharolyn Hurley</h6>
+            <span>Product Manager</span>
         </div>
-        <h6>Sharolyn Hurley</h6>
-        <span>Product Manager</span>
+        <div class="person">
+            <div class="person-crop">
+                <img src="{{ site.baseurl }}/assets/images/team/tim.png" class="rounded" />
+            </div>
+            <h6>Tim Csaky</h6>
+            <span>Developer</span>
+        </div>
+        <div class="person">
+            <div class="person-crop">
+                <img src="{{ site.baseurl }}/assets/images/team/jer.png" class="rounded" />
+            </div>
+            <h6>Jeremy Ho</h6>
+            <span>Developer</span>
+        </div>
     </div>
-    <div class="person">
-        <div class="person-crop">
-            <img src="{{ site.baseurl }}/assets/images/team/joe.png" class="rounded" />
+    <div>
+        <div class="person">
+            <div class="person-crop">
+                <img src="{{ site.baseurl }}/assets/images/team/kyl.png" class="rounded" />
+            </div>
+            <h6>Kyle Morel</h6>
+            <span>Developer</span>
         </div>
-        <h6>Joe Onireti</h6>
-        <span>Scrum Master</span>
-    </div>
-    <div class="person">
-        <div class="person-crop">
-            <img src="{{ site.baseurl }}/assets/images/team/tim.png" class="rounded" />
+        <div class="person">
+            <div class="person-crop">
+                <img src="{{ site.baseurl }}/assets/images/team/luc.png" class="rounded" />
+            </div>
+            <h6>Lucas O'Neil</h6>
+            <span>Developer</span>
         </div>
-        <h6>Tim Csaky</h6>
-        <span>Developer</span>
-    </div>
-    <div class="person">
-        <div class="person-crop">
-            <img src="{{ site.baseurl }}/assets/images/team/jer.png" class="rounded" />
+        <div class="person">
+            <div class="person-crop">
+                <img src="{{ site.baseurl }}/assets/images/team/dav.png" class="rounded" />
+            </div>
+            <h6>David Cusack</h6>
+            <span>UX Practitioner</span>
         </div>
-        <h6>Jeremy Ho</h6>
-        <span>Developer</span>
-    </div>
-    <div class="person">
-        <div class="person-crop">
-            <img src="{{ site.baseurl }}/assets/images/team/kyl.png" class="rounded" />
-        </div>
-        <h6>Kyle Morel</h6>
-        <span>Developer</span>
-    </div>
-    <div class="person">
-        <div class="person-crop">
-            <img src="{{ site.baseurl }}/assets/images/team/luc.png" class="rounded" />
-        </div>
-        <h6>Lucas O'Neil</h6>
-        <span>Developer</span>
-    </div>
-    <div class="person">
-        <div class="person-crop">
-            <img src="{{ site.baseurl }}/assets/images/team/dav.png" class="rounded" />
-        </div>
-        <h6>David Cusack</h6>
-        <span>UX Practitioner</span>
     </div>
 </div>
 
