@@ -18,7 +18,7 @@ contentStyle: unstructured
 onboard:
   - 'Self Hosted Service'
   - 'DockerHub'
-onboardDescription: We provide a <em>Docker Image</em> as well as documented <em>open-source code</em> for hosting your own service.
+onboardDescription: Deploy on OpenShift using the docker image.
 urls:
   github: https://github.com/BCDevOps/certbot
   docs: https://github.com/BCDevOps/certbot/blob/master/README.md
@@ -38,11 +38,11 @@ dockerImages:
 - Leverages and extends [https://certbot.eff.org/](https://certbot.eff.org/){:target="_blank"} for managing (create/renew) certificates
 - Should only be executed on Openshift Container Platform
 - Creates an OpenShift CronJob which will run on a regular schedule for renewing TLS certificates
-- If a cert is created/renewed, patch the new certificate to the managed OpenShift routes
+- If a certificate is created/renewed, patch the new certificate to the managed OpenShift routes
 
 #### Self-hosted
 
-If you want to host your own version of Certbot, you can start by:
+If you want to deploy your own version of Certbot, you can start by:
 
 - Reading the project [README file](https://github.com/BCDevOps/certbot/blob/master/README.md){:target="_blank"} to learn about what you'll need
 
