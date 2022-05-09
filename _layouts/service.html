@@ -6,7 +6,13 @@ layout: default
     {% if page.pictures.icon  %}
     <img class="img-fluid mr-3 mascot" src="{{ site.baseurl }}/assets/images/{{ page.pictures.icon }}" alt="mascot">
     {% endif %}
-    {{ page.title }} ({{ page.name }}) {{ page.version }}
+    {{ page.title }}
+
+    {% if page.name  %}
+      ({{ page.name }})
+    {% endif %}
+
+    {{ page.version }}
   </h2>
   <div class="page-description">
     <div class="container page-description-content">
@@ -265,10 +271,16 @@ layout: default
     {% include common/npmTable.html param=page %}
     {% endif %}
 
-  <!-- unstructured markdown content (eg: CHEFS page)-->
+  <!-- unstructured markdown content (eg: CHEFS, Certbot page)-->
   {% else %}
     <div class="unstructured-content">
       {{ content }}
+
+      {% if page.onboard contains "DockerHub" %}
+      <h5> <img class="img-fluid mr-3" src="{{ site.baseurl }}/assets/images/Docker.svg" alt="Docker"> <strong>DockerHub
+          @bcgovimage</strong></h5>
+      {% include common/dockerTable.html param=page %}
+      {% endif %}
     </div>
   {% endif %}
 </div>
