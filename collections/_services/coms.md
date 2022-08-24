@@ -16,8 +16,8 @@ onboard:
 onboardDescription: We provide <em>Docker Images</em> for hosting your own Common Object Management Storage Service.
 urls:
   github: https://github.com/bcgov/common-object-management-service/
-  docs: https://github.com/bcgov/common-object-management-service/blob/master/app/src/docs/v1.api-spec.yaml
-  showcase: https://github.com/bcgov/common-object-management-service/
+  docs: https://coms-dev-master.apps.silver.devops.gov.bc.ca/api/v1/docs
+  showcase: https://comss-dev-master.apps.silver.devops.gov.bc.ca/app/
 
 showcaseDescription: >-
   The Common Object Management Service Showcase (COMSS) is a demonstration of how an application can use S3 to manage and share objects within government or with the public.
@@ -36,4 +36,5 @@ dockerImages:
 - Discover, update and manage object versions
 - Toggle general public access to objects
 - Grant and manage refined user object permissions
+- Add, update, or remove object metadata and tags
 - Flexible search and filter capabilities based on objects and user permissions
