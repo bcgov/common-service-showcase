@@ -36,5 +36,5 @@ dockerImages:
 - Discover, update and manage object versions
 - Toggle general public access to objects
 - Grant and manage refined user object permissions
-- Add, update, or remove object metadata and tags
+- Add, update, and remove object metadata and tags
 - Flexible search and filter capabilities based on objects and user permissions
