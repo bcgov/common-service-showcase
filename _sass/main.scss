@@ -75,3 +75,14 @@ a .btn-primary i {
 .badge-pill {
   font-weight: normal !important;
 }
+
+.css-alert{
+  display: flex;
+  border-radius: .5rem;
+  padding: 1rem;
+  margin-bottom: 3rem;
+  font-size: 1.15rem;
+  .icon {  font-size: 200%; }
+  p { margin-bottom: 0; }
+  a { text-decoration: underline; }
+}
