@@ -34,7 +34,7 @@ pictures:
 
 #### Options for getting started with CHEFS
 
-CHEFS is maintained by a team in the Exchange Lab, a branch of the Office of the Chief Information Officer (OCIO) and is available to all B.C. Government employees and their contractors.
+CHEFS is maintained by the Forms Design and Submission team in the Ministry of Citizens' Services and is available to all B.C. Government employees and their contractors.
 
 Different ways you can use CHEFS in your projects:
 
