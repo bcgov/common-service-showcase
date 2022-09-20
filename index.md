@@ -63,7 +63,7 @@ name: HOME
     {% endfor %}
   </div>
   <div class="text-center my-5">
-    <h3 class="title-text"> <img class="img-fluid mr-3" src="{{ site.baseurl }}/assets/images/developer_board.svg" alt="components"> <strong>Available Common Components</strong></h3>
+    <h3 class="title-text" id="home-component-cards"> <img class="img-fluid mr-3" src="{{ site.baseurl }}/assets/images/developer_board.svg" alt="components"> <strong>Available Common Components</strong></h3>
   </div>
   <div class="mb-5 service-card-list">
     <div class="row">

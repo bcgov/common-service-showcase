@@ -17,11 +17,20 @@ description: Founded in 2019, we are a cross-functional agile team, building on 
         </div>
         <div class="person">
             <div class="person-crop">
+                <img src="{{ site.baseurl }}/assets/images/team/kor.png" class="rounded" />
+            </div>
+            <h6>Koreen Duckhorn</h6>
+            <span>Scrum Master</span>
+        </div>
+        <div class="person">
+            <div class="person-crop">
                 <img src="{{ site.baseurl }}/assets/images/team/tim.png" class="rounded" />
             </div>
             <h6>Tim Csaky</h6>
             <span>Developer</span>
         </div>
+    </div>
+    <div>
         <div class="person">
             <div class="person-crop">
                 <img src="{{ site.baseurl }}/assets/images/team/jer.png" class="rounded" />
@@ -29,8 +38,6 @@ description: Founded in 2019, we are a cross-functional agile team, building on 
             <h6>Jeremy Ho</h6>
             <span>Developer</span>
         </div>
-    </div>
-    <div>
         <div class="person">
             <div class="person-crop">
                 <img src="{{ site.baseurl }}/assets/images/team/kyl.png" class="rounded" />
@@ -44,13 +51,6 @@ description: Founded in 2019, we are a cross-functional agile team, building on 
             </div>
             <h6>Lucas O'Neil</h6>
             <span>Developer</span>
-        </div>
-        <div class="person">
-            <div class="person-crop">
-                <img src="{{ site.baseurl }}/assets/images/team/dav.png" class="rounded" />
-            </div>
-            <h6>David Cusack</h6>
-            <span>UX Practitioner</span>
         </div>
     </div>
 </div>
