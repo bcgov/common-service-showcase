@@ -36,12 +36,12 @@
 									"key": "anyKey",
 									"description": "This endpoint can accept an arbitrary number of form-data keys. There must be at least one key present, and every key must be unique. All keys shall contain a binary representation of the file to upload. In the response, each successfully uploaded file shall contain a 'fieldName' property corresponding to your custom defined keys.",
 									"type": "file",
-									"src": []
+									"src": "/C:/Users/tcsaky/Documents/my desktop/coms_postman_collection.json"
 								}
 							]
 						},
 						"url": {
-							"raw": "{{baseUrl}}/object?tagset[x]=a&tagset[y]=b",
+							"raw": "{{baseUrl}}/object?tagset[x]=a",
 							"host": [
 								"{{baseUrl}}"
 							],
@@ -57,7 +57,8 @@
 								{
 									"key": "tagset[y]",
 									"value": "b",
-									"description": "Tags for the object, defined as a Key/Value tag. The query must be formatted in deepObject style notation, where a tag-set made out of multiple tags would be encoded something similar to `tagset[x]=a&tagset[y]=b`. Only one value can exist for a given tag key."
+									"description": "Tags for the object, defined as a Key/Value tag. The query must be formatted in deepObject style notation, where a tag-set made out of multiple tags would be encoded something similar to `tagset[x]=a&tagset[y]=b`. Only one value can exist for a given tag key.",
+									"disabled": true
 								}
 							]
 						},
@@ -92,7 +93,7 @@
 									]
 								},
 								"url": {
-									"raw": "{{baseUrl}}/object?tagset[*][key]=x&tagset[*][value]=a",
+									"raw": "{{baseUrl}}/object?tagset[x]=a&tagset[y]=b",
 									"host": [
 										"{{baseUrl}}"
 									],
@@ -101,12 +102,12 @@
 									],
 									"query": [
 										{
-											"key": "tagset[*][key]",
-											"value": "x"
+											"key": "tagset[x]",
+											"value": "a"
 										},
 										{
-											"key": "tagset[*][value]",
-											"value": "a"
+											"key": "tagset[y]",
+											"value": "b"
 										}
 									]
 								}
@@ -133,15 +134,17 @@
 							{
 								"description": "An arbitrary metadata key/value pair. Must contain the x-amz-meta- prefix to be valid. Multiple metadata pairs can be defined. keys must be unique and will be converted to lowercase.",
 								"key": "x-amz-meta-*",
-								"value": "ad consequat ea labore amet"
+								"value": "ad consequat ea labore amet",
+								"disabled": true
 							},
 							{
 								"key": "Accept",
-								"value": "application/json"
+								"value": "application/json",
+								"disabled": true
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/object?objId=ac246e31-c807-496c-bc93-cd8bc2f1b2b4&path=coms/env/ac246e31-c807-496c-bc93-cd8bc2f1b2b4&active=true&public=true&mimeType=application/octet-stream&name=foobar.txt&tagset[x]=a&tagset[y]=b",
+							"raw": "{{baseUrl}}/object",
 							"host": [
 								"{{baseUrl}}"
 							],
@@ -152,42 +155,44 @@
 								{
 									"key": "objId",
 									"value": "ac246e31-c807-496c-bc93-cd8bc2f1b2b4",
-									"description": "Uuid or array of uuids representing the object"
+									"description": "Uuid or array of uuids representing the object",
+									"disabled": true
 								},
 								{
 									"key": "path",
 									"value": "coms/env/ac246e31-c807-496c-bc93-cd8bc2f1b2b4",
-									"description": "The canonical S3 path string of the object"
+									"description": "The canonical S3 path string of the object",
+									"disabled": true
 								},
 								{
 									"key": "active",
 									"value": "true",
-									"description": "Boolean on active status"
+									"description": "Boolean on active status",
+									"disabled": true
 								},
 								{
 									"key": "public",
 									"value": "true",
-									"description": "Boolean on public status"
+									"description": "Boolean on public status",
+									"disabled": true
 								},
 								{
 									"key": "mimeType",
 									"value": "application/octet-stream",
-									"description": "The object MIME Type"
+									"description": "The object MIME Type",
+									"disabled": true
 								},
 								{
 									"key": "name",
 									"value": "foobar.txt",
-									"description": "the `name` metadata for the object Typically a descriptive title or original filename"
+									"description": "the `name` metadata for the object Typically a descriptive title or original filename",
+									"disabled": true
 								},
 								{
 									"key": "tagset[x]",
 									"value": "a",
-									"description": "Tags for the object, defined as a Key/Value tag. The query must be formatted in deepObject style notation, where a tag-set made out of multiple tags would be encoded something similar to `tagset[x]=a&tagset[y]=b`. Only one value can exist for a given tag key."
-								},
-								{
-									"key": "tagset[y]",
-									"value": "b",
-									"description": "Tags for the object, defined as a Key/Value tag. The query must be formatted in deepObject style notation, where a tag-set made out of multiple tags would be encoded something similar to `tagset[x]=a&tagset[y]=b`. Only one value can exist for a given tag key."
+									"description": "Tags for the object, defined as a Key/Value tag. The query must be formatted in deepObject style notation, where a tag-set made out of multiple tags would be encoded something similar to `tagset[x]=a&tagset[y]=b`. Only one value can exist for a given tag key.",
+									"disabled": true
 								}
 							]
 						},
@@ -211,7 +216,7 @@
 									}
 								],
 								"url": {
-									"raw": "{{baseUrl}}/object?objId=ac246e31-c807-496c-bc93-cd8bc2f1b2b4&path=coms/env/ac246e31-c807-496c-bc93-cd8bc2f1b2b4&active=true&public=true&mimeType=application/octet-stream&name=foobar.txt&tagset[*][key]=x&tagset[*][value]=a",
+									"raw": "{{baseUrl}}/object?objId=ac246e31-c807-496c-bc93-cd8bc2f1b2b4&path=coms/env/ac246e31-c807-496c-bc93-cd8bc2f1b2b4&active=true&public=true&mimeType=application/octet-stream&name=foobar.txt&tagset[x]=a&tagset[y]=b",
 									"host": [
 										"{{baseUrl}}"
 									],
@@ -244,12 +249,12 @@
 											"value": "foobar.txt"
 										},
 										{
-											"key": "tagset[*][key]",
-											"value": "x"
+											"key": "tagset[x]",
+											"value": "a"
 										},
 										{
-											"key": "tagset[*][value]",
-											"value": "a"
+											"key": "tagset[y]",
+											"value": "b"
 										}
 									]
 								}
@@ -744,7 +749,7 @@
 									]
 								},
 								"url": {
-									"raw": "{{baseUrl}}/object/:objId?tagset[*][key]=x&tagset[*][value]=a",
+									"raw": "{{baseUrl}}/object/:objId?tagset[x]=a&tagset[y]=b",
 									"host": [
 										"{{baseUrl}}"
 									],
@@ -754,12 +759,12 @@
 									],
 									"query": [
 										{
-											"key": "tagset[*][key]",
-											"value": "x"
+											"key": "tagset[x]",
+											"value": "a"
 										},
 										{
-											"key": "tagset[*][value]",
-											"value": "a"
+											"key": "tagset[y]",
+											"value": "b"
 										}
 									],
 									"variable": [
@@ -1393,6 +1398,97 @@
 									"key": "objId",
 									"value": "00000000-0000-0000-0000-000000000000",
 									"description": "(Required) Uuid of an object"
+								}
+							]
+						},
+						"description": "Adds a specified set of tags to the object. Multiple Key/Value pairs can be provided in the query."
+					},
+					"response": [
+						{
+							"name": "The resource was added successfully.",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: basic",
+										"key": "Authorization",
+										"value": "Basic <credentials>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/object/:objId/tagging?tagset[x]=a&tagset[y]=b&versionId=1647462569641",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"object",
+										":objId",
+										"tagging"
+									],
+									"query": [
+										{
+											"key": "tagset[x]",
+											"value": "a"
+										},
+										{
+											"key": "tagset[y]",
+											"value": "b"
+										},
+										{
+											"key": "versionId",
+											"value": "1647462569641"
+										}
+									],
+									"variable": [
+										{
+											"key": "objId",
+											"value": "00000000-0000-0000-0000-000000000000",
+											"description": "(Required) Uuid of an object"
+										}
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Adds tags to an object Copy",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/object/tagging?tagset[a]=1&tagset[a]=3",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"object",
+								"tagging"
+							],
+							"query": [
+								{
+									"key": "tagset[a]",
+									"value": "1"
+								},
+								{
+									"key": "tagset[a]",
+									"value": "3"
 								}
 							]
 						},
@@ -2300,21 +2396,41 @@
 		"type": "basic",
 		"basic": [
 			{
-				"key": "username",
-				"value": "<Basic Auth Username>",
+				"key": "password",
+				"value": "pass1",
 				"type": "string"
 			},
 			{
-				"key": "password",
-				"value": "<Basic Auth Password>",
+				"key": "username",
+				"value": "user1",
 				"type": "string"
 			}
 		]
 	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
 	"variable": [
 		{
 			"key": "baseUrl",
-			"value": "/api/v1",
+			"value": "http://localhost:3000/api/v1/",
 			"type": "string"
 		}
 	]
