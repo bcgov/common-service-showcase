@@ -34,11 +34,9 @@ pictures:
 
 #### Options for getting started with CHEFS
 
-CHEFS is maintained by the Forms Design and Submission team in the Ministry of Citizens' Services and is available to all B.C. Government employees and their contractors.
+CHEFS is maintained by the Forms Design and Submission team in the Ministry of Citizens' Services and is available to all B.C. Government employees and their contractors. Different ways you can use CHEFS in your projects:
 
-Different ways you can use CHEFS in your projects:
-
-###### Hosted service
+##### Hosted service
 
 If you have an IDIR, you can log in and start building forms right now with our drag and drop interface.
 
@@ -46,13 +44,17 @@ If you have an IDIR, you can log in and start building forms right now with our 
 
 [Follow the quick-start guide](https://github.com/bcgov/common-hosted-form-service/wiki/Quick-Start-Guide){:target="_blank"} to get you going. You can also review the [help documentation](https://github.com/bcgov/common-hosted-form-service/wiki){:target="_blank"} for answers to more detailed questions.
 
-###### API
+##### API
 
 For programatic access to form data, you can also connect to CHEFS through the API.
 
-- [Review the API specifications](https://submit.digital.gov.bc.ca/app/api/v1/docs){:target="_blank"}
+<ul class="mb-1">
+  <li>[Review the API specifications](https://submit.digital.gov.bc.ca/app/api/v1/docs){:target="_blank"}</li>
+</ul>
 
-###### Self-hosted
+**Note: Access to he CHEFS API is managed in your form settings in CHEFS (see: <a target="_blank" href="https://github.com/bcgov/common-hosted-form-service/wiki/Generating-API-Keys">Generating API keys</a>)**
+
+##### Self-hosted
 
 If you want to host your own version of CHEFS, you can start by:
 

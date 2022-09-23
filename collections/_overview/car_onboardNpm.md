@@ -7,6 +7,7 @@ img:
   path: /assets/images/slide5.svg
   alt: NPM
 ---
-- API Access through Get Token
-- DockerHub @bcgovimages
-- **NPM @bcgov**
+- <a href="/common-service-showcase/onboarding/getok.html">API Access through GETOK</a>
+- <a href="/common-service-showcase/onboarding/docker.html">DockerHub @bcgovimages</a>
+- **<a href="/common-service-showcase/onboarding/npm.html">NPM @bcgov</a>**
+

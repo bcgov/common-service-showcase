@@ -3,12 +3,17 @@ layout: default
 ---
 <div class="page-header">
 
-  {% if page.name == "CHEFS"  %}
+  {% if page.name == "CHEFS" %}
   <div class="container">
-    <div class="css-alert alert alert-info alert-dismissible fade show" role="alert" aria-labelledby="info" aria-describedby="desc">
+    <div class="css-alert alert alert-info alert-dismissible fade show" role="alert" aria-labelledby="info"
+      aria-describedby="desc">
       <div class="icon mr-3 fas fa-info-circle"></div>
-      <p class="">
-        CHEFS is now maintained by the <a href="mailto:submit.digital@gov.bc.ca" target="_blank">Forms Design and Submission</a> team in the Ministry of Citizens' Services.<br />Information regarding this <a href="https://bcdevex.atlassian.net/wiki/spaces/CCP/pages/1022722067/CHEFS+is+moving+to+Citizen+Services" target="_blank">transition</a> has been published. <br />If you have bookmarked this page, please update your bookmarks to <a href="https://submit.digital.gov.bc.ca/app" target="_blank">this landing page</a>.
+      <p>
+        CHEFS is now maintained by the <a href="mailto:submit.digital@gov.bc.ca" target="_blank">Forms Design and
+          Submission</a> team in the Ministry of Citizens' Services.<br />Information regarding this <a
+          href="https://bcdevex.atlassian.net/wiki/spaces/CCP/pages/1022722067/CHEFS+is+moving+to+Citizen+Services"
+          target="_blank">transition</a> has been published. <br />If you have bookmarked this page, please update your
+        bookmarks to <a href="https://submit.digital.gov.bc.ca/app" target="_blank">this landing page</a>.
       </p>
       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
         <span aria-hidden="true">&times;</span>
@@ -18,13 +23,13 @@ layout: default
   {% endif %}
 
   <h2 class="text-center">
-    {% if page.pictures.icon  %}
+    {% if page.pictures.icon %}
     <img class="img-fluid mr-3 mascot" src="{{ site.baseurl }}/assets/images/{{ page.pictures.icon }}" alt="mascot">
     {% endif %}
     {{ page.title }}
 
-    {% if page.name  %}
-      ({{ page.name }})
+    {% if page.name %}
+    ({{ page.name }})
     {% endif %}
 
     {{ page.version }}
@@ -37,14 +42,14 @@ layout: default
         {% endif %}
       </div> <br>
       {{ page.description }}
-      {% if page.descriptionLinks  %}
-        <ul class="description-links">
-          {% for links in page.descriptionLinks %}
-          <li>
+      {% if page.descriptionLinks %}
+      <ul class="description-links">
+        {% for links in page.descriptionLinks %}
+        <li>
           <a href="{{ links.link.url }}">{{ links.link.text }}</a>
-          </li>
-          {% endfor %}
-        </ul>
+        </li>
+        {% endfor %}
+      </ul>
       {% endif %}
     </div>
   </div>
@@ -52,250 +57,275 @@ layout: default
 
 <div class="container">
   {% if page.contentStyle != "unstructured" %}
-    <h4><strong>Onboarding Options</strong></h4>
-    {% if page.onboard and page.onboard != empty  %}
-    <p>{{ page.onboardDescription }}</p>
-    {% else %}
-    Not Applicable
-    {% endif %}
+  <h4><strong>Onboarding Options</strong></h4>
+  {% if page.onboard and page.onboard != empty %}
+  <p>{{ page.onboardDescription }}</p>
+  {% else %}
+  Not Applicable
+  {% endif %}
 
-    {% if page.onboard contains "API Access" %}
-    <h5> <img class="img-fluid mr-3" src="{{ site.baseurl }}/assets/images/key.svg" alt="components"> <strong>API Access
-        through GETOK</strong></h5>
-    <div class="feature-card">
-      <div class="card">
-        <div class="card-header">
-          {{ page.title }} ({{ page.name }})
-        </div>
-        <div class="card-body">
-          <div class="row no-gutters">
-            <div class="col-sm-3">API Capability</div>
-            <div class="col-sm-9">{{ content }}</div>
-          </div>
-          <div class="row no-gutters">
-            <div class="col-sm-3">API Review</div>
-            <div class="col-sm-9">
-              {% if page.urls.docs or page.urls.postman %}
-              {% if page.urls.docs %}
-              <a href="{{ page.urls.docs }}" target="_blank">Specification
-                <i class="fas fa-external-link-square-alt"></i>
-              </a>
-              {% endif %}
-              {% if page.urls.postman %}
-              <br /> <br />
-              <a href="{{ page.urls.postman }}" target="_blank" download>Postman Collection
-                <i class="fas fa-download"></i>
-              </a>
-              {% endif %}
-              {% if page.urls.postmanHelp %}
-              <br /> <br />
-              <a href="{{ page.urls.postmanHelp }}" target="_blank" download>Postman Collection Help
-                <i class="fas fa-download"></i>
-              </a>
-              {% endif %}
-              {% else %}
-              Not Applicable
-              {% endif %}
-            </div>
-          </div>
-          <div class="row no-gutters">
-            <div class="col-sm-3">GitHub</div>
-            <div class="col-sm-9">
-              {% if page.urls.docs %}
-              <a href="{{ page.urls.github }}" target="_blank">Repository
-                <i class="fas fa-external-link-square-alt"></i>
-              </a>
-              {% else %}
-              Not Applicable
-              {% endif %}
-            </div>
-          </div>
-          <div class="row no-gutters">
-            <div class="col-sm-3">See in Action</div>
-            <div class="col-sm-9">
-              {% if page.urls.showcase %}
-              <a href="{{ page.urls.showcase }}" target="_blank">Showcase App
-                <i class="fas fa-external-link-square-alt"></i>
-              </a>
-              <hr>
-              {{ page.showcaseDescription }}
-              {% else %}
-              Not Applicable
-              {% endif %}
-            </div>
-          </div>
-        </div>
+  {% if page.onboard contains "API Access" %}
+  <h5> <img class="img-fluid mr-3" src="{{ site.baseurl }}/assets/images/key.svg" alt="components"> <strong>API Access
+      through GETOK</strong></h5>
+  <div class="feature-card">
+    <div class="card">
+      <div class="card-header">
+        {{ page.title }} ({{ page.name }})
       </div>
-      {% include common/getokBtn.html %}
-    </div>
-    {% endif %}
-
-    {% if page.onboard contains "Hosted Service" %}
-    <h5> <img class="img-fluid mr-3" src="{{ site.baseurl }}/assets/images/cloud.svg" alt="Hosted Service"><strong>Hosted Service</strong></h5>
-    <div class="feature-card">
-      <div class="card">
-        <div class="card-header">
-          {{ page.title }} ({{ page.name }})
+      <div class="card-body">
+        <div class="row no-gutters">
+          <div class="col-sm-3">API Capability</div>
+          <div class="col-sm-9">{{ content }}</div>
         </div>
-        <div class="card-body">
-          <div class="row no-gutters">
-            <div class="col-sm-3">Feature List</div>
-            <div class="col-sm-9">{{ content }}</div>
-          </div>
-          {% if page.urls.fider %}
-          <div class="row no-gutters">
-            <div class="col-sm-3">Feedback</div>
-            <div class="col-sm-9">
-              <a href="{{ page.urls.fider }}" target="_blank">Post your ideas, leave a comment or vote on what CHEFS features we should build next
-                <i class="fas fa-external-link-square-alt"></i>
-              </a>
-            </div>
-          </div>
-          {% endif %}
-          <div class="row no-gutters">
-            <div class="col-sm-3">Hosted URL</div>
-            <div class="col-sm-9">
-              <a href="{{ page.urls.hosted }}" target="_blank">{{ page.urls.hosted }}
-                <i class="fas fa-external-link-square-alt"></i>
-              </a>
-            </div>
-          </div>
-          <div class="row no-gutters">
-            <div class="col-sm-3">Documentation</div>
-            <div class="col-sm-9">
-              {% if page.urls.guide %}
-              <a href="{{ page.urls.guide }}" target="_blank">User Guide
-                <i class="fas fa-external-link-square-alt"></i>
-              </a>
-              {% endif %}
-            </div>
-          </div>
-
-          <div class="row no-gutters">
-            <div class="col-sm-3">GitHub</div>
-            <div class="col-sm-9">
-              <a href="{{ page.urls.github }}" target="_blank">Repository
-                <i class="fas fa-external-link-square-alt"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="row no-gutters">
-            <div class="col-sm-3">API Review</div>
-            <div class="col-sm-9">
-              {% if page.urls.docs %}
-              <a href="{{ page.urls.docs }}" target="_blank">Specification
-                <i class="fas fa-external-link-square-alt"></i>
-              </a>
-              {% endif %}
-              {% if page.urls.postman %}
-              <br /> <br />
-              <a href="{{ page.urls.postman }}" target="_blank" download>Postman Collection
-                <i class="fas fa-download"></i>
-              </a>
-              {% endif %}
-            </div>
+        <div class="row no-gutters">
+          <div class="col-sm-3">API Review</div>
+          <div class="col-sm-9">
+            {% if page.urls.docs or page.urls.postman %}
+            {% if page.urls.docs %}
+            <a href="{{ page.urls.docs }}" target="_blank">Specification
+              <i class="fas fa-external-link-square-alt"></i>
+            </a>
+            {% endif %}
+            {% if page.urls.postman %}
+            <br /> <br />
+            <a href="{{ page.urls.postman }}" target="_blank" download>Postman Collection
+              <i class="fas fa-download"></i>
+            </a>
+            {% endif %}
+            {% if page.urls.postmanHelp %}
+            <br /> <br />
+            <a href="{{ page.urls.postmanHelp }}" target="_blank" download>Postman Collection Help
+              <i class="fas fa-download"></i>
+            </a>
+            {% endif %}
+            {% else %}
+            Not Applicable
+            {% endif %}
           </div>
         </div>
-      </div>
-      <div class="text-center mt-5">
-        <a href="{{ page.urls.hosted}}" class="btn btn-primary" role="button"
-          aria-disabled="true">{{ page.title }}</a>
-      </div>
-    </div>
-    {% endif %}
-
-    {% if page.onboard contains "Self Hosted Service" %}
-    <h5> <img class="img-fluid mr-3" src="{{ site.baseurl }}/assets/images/cloud.svg" alt="Self Hosted Service"><strong>Self Hosted Service</strong></h5>
-    <div class="feature-card">
-      <div class="card">
-        <div class="card-header">
-          {{ page.title }} ({{ page.name }})
+        <div class="row no-gutters">
+          <div class="col-sm-3">GitHub</div>
+          <div class="col-sm-9">
+            {% if page.urls.docs %}
+            <a href="{{ page.urls.github }}" target="_blank">Repository
+              <i class="fas fa-external-link-square-alt"></i>
+            </a>
+            {% else %}
+            Not Applicable
+            {% endif %}
+          </div>
         </div>
-        <div class="card-body">
-          <div class="row no-gutters">
-            <div class="col-sm-3">API Capability</div>
-            <div class="col-sm-9">{{ content }}</div>
-          </div>
-          <div class="row no-gutters">
-            <div class="col-sm-3">API Review</div>
-            <div class="col-sm-9">
-              {% if page.urls.docs or page.urls.postman %}
-              {% if page.urls.docs %}
-              <a href="{{ page.urls.docs }}" target="_blank">Specification
-                <i class="fas fa-external-link-square-alt"></i>
-              </a>
-              {% endif %}
-              {% if page.urls.postman %}
-              <br /> <br />
-              <a href="{{ page.urls.postman }}" target="_blank" download>Postman Collection
-                <i class="fas fa-download"></i>
-              </a>
-              {% endif %}
-              {% if page.urls.postmanHelp %}
-              <br /> <br />
-              <a href="{{ page.urls.postmanHelp }}" target="_blank" download>Postman Collection Help
-                <i class="fas fa-download"></i>
-              </a>
-              {% endif %}
-              {% else %}
-              Not Applicable
-              {% endif %}
-            </div>
-          </div>
-          <div class="row no-gutters">
-            <div class="col-sm-3">GitHub</div>
-            <div class="col-sm-9">
-              {% if page.urls.docs %}
-              <a href="{{ page.urls.github }}" target="_blank">Repository
-                <i class="fas fa-external-link-square-alt"></i>
-              </a>
-              {% else %}
-              Not Applicable
-              {% endif %}
-            </div>
-          </div>
-          <div class="row no-gutters">
-            <div class="col-sm-3">See in Action</div>
-            <div class="col-sm-9">
-              {% if page.urls.showcase %}
-              <a href="{{ page.urls.showcase }}" target="_blank">Showcase App
-                <i class="fas fa-external-link-square-alt"></i>
-              </a>
-              <hr>
-              {{ page.showcaseDescription }}
-              {% else %}
-              Not Applicable
-              {% endif %}
-            </div>
+        <div class="row no-gutters">
+          <div class="col-sm-3">See in Action</div>
+          <div class="col-sm-9">
+            {% if page.urls.showcase %}
+            <a href="{{ page.urls.showcase }}" target="_blank">Showcase App
+              <i class="fas fa-external-link-square-alt"></i>
+            </a>
+            <hr>
+            {{ page.showcaseDescription }}
+            {% else %}
+            Not Applicable
+            {% endif %}
           </div>
         </div>
       </div>
     </div>
+
+    {% if page.showChesAdvice %}
+    <div class="mt-5 css-alert alert alert-info alert-dismissible fade show" role="alert" aria-labelledby="info"
+      aria-describedby="desc">
+      <div class="icon mr-3 fas fa-info-circle"></div>
+      <div>
+        <p class="mb-2">Please read our guide on <a target="_blank"
+            href="https://github.com/bcgov/common-hosted-email-service/wiki/Best-Practices">Best Practices for use of
+            the CHES messaging API</a>.</p>
+        <p class="mb-2">There is a change to our onboarding process for CHES. Before requesting your API credentials through GETOK,
+          you must make an IStore request for a consultation with OCIO Messaging (the underlying SMTP service provider).
+          Book your consultation through your service desk (Office Productivity > Consulting Services > Messaging and
+          Collaboration - Consulting) or email <a href="mailto:mcs@gov.bc.ca">mcs@gov.bc.ca</a>.</p>
+        <p>Requests to the CHES API must originate from an IP address within the BC Government's SpanBC network. If your
+          application is hosted outside of the SpanBC network OCIO may be able to find you an alternate solution.
+          Failure to contact OCIO may affect your access to the CHES service.</p>
+      </div>
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
     {% endif %}
+
+    {% include common/getokBtn.html %}
+  </div>
+  {% endif %}
+
+  {% if page.onboard contains "Hosted Service" %}
+  <h5> <img class="img-fluid mr-3" src="{{ site.baseurl }}/assets/images/cloud.svg" alt="Hosted Service"><strong>Hosted
+      Service</strong></h5>
+  <div class="feature-card">
+    <div class="card">
+      <div class="card-header">
+        {{ page.title }} ({{ page.name }})
+      </div>
+      <div class="card-body">
+        <div class="row no-gutters">
+          <div class="col-sm-3">Feature List</div>
+          <div class="col-sm-9">{{ content }}</div>
+        </div>
+        {% if page.urls.fider %}
+        <div class="row no-gutters">
+          <div class="col-sm-3">Feedback</div>
+          <div class="col-sm-9">
+            <a href="{{ page.urls.fider }}" target="_blank">Post your ideas, leave a comment or vote on what CHEFS
+              features we should build next
+              <i class="fas fa-external-link-square-alt"></i>
+            </a>
+          </div>
+        </div>
+        {% endif %}
+        <div class="row no-gutters">
+          <div class="col-sm-3">Hosted URL</div>
+          <div class="col-sm-9">
+            <a href="{{ page.urls.hosted }}" target="_blank">{{ page.urls.hosted }}
+              <i class="fas fa-external-link-square-alt"></i>
+            </a>
+          </div>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-sm-3">Documentation</div>
+          <div class="col-sm-9">
+            {% if page.urls.guide %}
+            <a href="{{ page.urls.guide }}" target="_blank">User Guide
+              <i class="fas fa-external-link-square-alt"></i>
+            </a>
+            {% endif %}
+          </div>
+        </div>
+
+        <div class="row no-gutters">
+          <div class="col-sm-3">GitHub</div>
+          <div class="col-sm-9">
+            <a href="{{ page.urls.github }}" target="_blank">Repository
+              <i class="fas fa-external-link-square-alt"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="row no-gutters">
+          <div class="col-sm-3">API Review</div>
+          <div class="col-sm-9">
+            {% if page.urls.docs %}
+            <a href="{{ page.urls.docs }}" target="_blank">Specification
+              <i class="fas fa-external-link-square-alt"></i>
+            </a>
+            {% endif %}
+            {% if page.urls.postman %}
+            <br /> <br />
+            <a href="{{ page.urls.postman }}" target="_blank" download>Postman Collection
+              <i class="fas fa-download"></i>
+            </a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-5">
+      <a href="{{ page.urls.hosted}}" class="btn btn-primary" role="button" aria-disabled="true">{{ page.title }}</a>
+    </div>
+  </div>
+  {% endif %}
+
+  {% if page.onboard contains "Self Hosted Service" %}
+  <h5> <img class="img-fluid mr-3" src="{{ site.baseurl }}/assets/images/cloud.svg"
+      alt="Self Hosted Service"><strong>Self Hosted Service</strong></h5>
+  <div class="feature-card">
+    <div class="card">
+      <div class="card-header">
+        {{ page.title }} ({{ page.name }})
+      </div>
+      <div class="card-body">
+        <div class="row no-gutters">
+          <div class="col-sm-3">API Capability</div>
+          <div class="col-sm-9">{{ content }}</div>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-sm-3">API Review</div>
+          <div class="col-sm-9">
+            {% if page.urls.docs or page.urls.postman %}
+            {% if page.urls.docs %}
+            <a href="{{ page.urls.docs }}" target="_blank">Specification
+              <i class="fas fa-external-link-square-alt"></i>
+            </a>
+            {% endif %}
+            {% if page.urls.postman %}
+            <br /> <br />
+            <a href="{{ page.urls.postman }}" target="_blank" download>Postman Collection
+              <i class="fas fa-download"></i>
+            </a>
+            {% endif %}
+            {% if page.urls.postmanHelp %}
+            <br /> <br />
+            <a href="{{ page.urls.postmanHelp }}" target="_blank" download>Postman Collection Help
+              <i class="fas fa-download"></i>
+            </a>
+            {% endif %}
+            {% else %}
+            Not Applicable
+            {% endif %}
+          </div>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-sm-3">GitHub</div>
+          <div class="col-sm-9">
+            {% if page.urls.docs %}
+            <a href="{{ page.urls.github }}" target="_blank">Repository
+              <i class="fas fa-external-link-square-alt"></i>
+            </a>
+            {% else %}
+            Not Applicable
+            {% endif %}
+          </div>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-sm-3">See in Action</div>
+          <div class="col-sm-9">
+            {% if page.urls.showcase %}
+            <a href="{{ page.urls.showcase }}" target="_blank">Showcase App
+              <i class="fas fa-external-link-square-alt"></i>
+            </a>
+            <hr>
+            {{ page.showcaseDescription }}
+            {% else %}
+            Not Applicable
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  {% if page.onboard contains "DockerHub" %}
+  <h5> <img class="img-fluid mr-3" src="{{ site.baseurl }}/assets/images/Docker.svg" alt="Docker"> <strong>DockerHub
+      @bcgovimage</strong></h5>
+  {% include common/dockerTable.html param=page %}
+  {% endif %}
+
+  {% if page.onboard contains "NPM" %}
+  <h5> <img class="img-fluid mr-3" src="{{ site.baseurl }}/assets/images/npm.svg" alt="npm"> <strong>NPM
+      @bcgovimage</strong></h5>
+  {% include common/npmTable.html param=page %}
+  {% endif %}
+
+  <!-- unstructured markdown content (eg: CHEFS, Certbot page)-->
+  {% else %}
+  <div class="unstructured-content">
+    {{ content }}
 
     {% if page.onboard contains "DockerHub" %}
     <h5> <img class="img-fluid mr-3" src="{{ site.baseurl }}/assets/images/Docker.svg" alt="Docker"> <strong>DockerHub
         @bcgovimage</strong></h5>
     {% include common/dockerTable.html param=page %}
     {% endif %}
-
-    {% if page.onboard contains "NPM" %}
-    <h5> <img class="img-fluid mr-3" src="{{ site.baseurl }}/assets/images/npm.svg" alt="npm"> <strong>NPM
-        @bcgovimage</strong></h5>
-    {% include common/npmTable.html param=page %}
-    {% endif %}
-
-  <!-- unstructured markdown content (eg: CHEFS, Certbot page)-->
-  {% else %}
-    <div class="unstructured-content">
-      {{ content }}
-
-      {% if page.onboard contains "DockerHub" %}
-      <h5> <img class="img-fluid mr-3" src="{{ site.baseurl }}/assets/images/Docker.svg" alt="Docker"> <strong>DockerHub
-          @bcgovimage</strong></h5>
-      {% include common/dockerTable.html param=page %}
-      {% endif %}
-    </div>
+  </div>
   {% endif %}
 </div>

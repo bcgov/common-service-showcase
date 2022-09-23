@@ -7,13 +7,14 @@ order: 1
 ---
 #### API Access through GETOK
 
-Get Token (GETOK) is a tool to automate the process for providing teams access (via client credentials) to Hosted Common Services. Use GETOK to promote your access through the various environments: DEV, TEST, and PROD.
+<p class="mb-3">Get Token (GETOK) is a self-serve tool for providing teams access (via client credentials) to the following hosted API's:</p>
 
-###### Available  Components:
-- Common Hosted Email Service
-- Common Document Generation Service
+- **<a href="/common-service-showcase/services/ches.html">Common Hosted Email Service</a>**
+- **<a href="/common-service-showcase/services/cdogs.html">Common Document Generation Service</a>**
 
-##### How To
+<strong>Note: Access to the <a href="/common-service-showcase/services/chefs.html">Common Hosted Form Service (CHEFS)</a> API is managed through the <a href="https://submit.digital.gov.bc.ca/app" target="_blank">CHEFS website</a>.</strong>
+
+#### How To Use GETOK
 
 ###### Step 1 Create an account for your application
 Click the “GETOK” button to onboard and submit the “Request Account” form with the Acronym of your application, you will get an email once it is approved. Follow the link provided in your email, your application will be ready to register.
