@@ -36,7 +36,7 @@
 									"key": "anyKey",
 									"description": "This endpoint can accept an arbitrary number of form-data keys. There must be at least one key present, and every key must be unique. All keys shall contain a binary representation of the file to upload. In the response, each successfully uploaded file shall contain a 'fieldName' property corresponding to your custom defined keys.",
 									"type": "file",
-									"src": "/C:/Users/tcsaky/Documents/my desktop/coms_postman_collection.json"
+									"src": ""
 								}
 							]
 						},
