@@ -16,7 +16,7 @@ descriptionLinks:
       text: Review Certbot documentation
 contentStyle: unstructured
 onboard:
-  - 'Self Hosted Service'
+  - 'Self-Hosted Service'
   - 'DockerHub'
 onboardDescription: Deploy on OpenShift using the <em>Docker Image</em>.
 urls:
@@ -46,7 +46,7 @@ If you want to deploy your own version of Certbot, you can start by:
 
 - Reading the project [README file](https://github.com/BCDevOps/certbot/blob/master/README.md){:target="_blank"} to learn about what you'll need
 
-#### Connecting with the Common Services Showcase team
+#### Connecting with the Common Service Showcase team
 
 We are always interested in learning about what feature we should add next. If you have a suggestion, you can reach out to us through:
 

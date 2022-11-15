@@ -5,7 +5,7 @@ name: HOME
 {% assign carouselCards = site.overview | where: "type", "carousel" | sort: 'order' %}
 {% assign iconCards = site.overview | where: "type", "icon" | sort: 'order' %}
 {% assign checkerboardCards = site.overview | where: "type", "checkerboard" | sort: 'order' %}
-{% assign commonServices = site.services | sort: 'order' %}
+{% assign commonServices = site.services | where_exp:"service", "service.name != 'CHEFS'" | sort: 'order' %}
 
 <div class="container">
   <div id="overviewCarousel" class="carousel slide" data-ride="carousel">
@@ -23,7 +23,7 @@ name: HOME
             <p>{{ card.content }}</p>
           </div>
           <div class="col-sm-7">
-            <img class="img-fluid" src="{{ site.baseurl }}{{ card.img.path }}" alt="{{ card.img.alt }}">
+            <img class="img-fluid " src="{{ site.baseurl }}{{ card.img.path }}" alt="{{ card.img.alt }}">
           </div>
         </div>
       </div>
@@ -40,7 +40,7 @@ name: HOME
   </div>
 
   <div class="mb-3 mt-5 px-5">
-    <p>This website provides information relating to a range of services and open-source software components created by the Common Services Showcase team. We aim to promote, curate, develop, and make it easy to onboard to our hosted services or integrate our micro-services and common components into your own applications. The goal is to <strong><em>reduce costs, accelerate development, and promote consistency</em></strong> and supportability of BC Gov digital services.</p>
+    <p>This website provides information relating to a range of services and open-source software components created by the Common Service Showcase team. We aim to promote, curate, develop, and make it easy to onboard to our hosted services or integrate our micro-services and common components into your own applications. The goal is to <strong>reduce costs, accelerate development, and promote consistency</strong> and supportability of BC Gov digital services.</p>
     <div class="row">
       {% for card in iconCards %}
       <div class="icon-list col-sm-4">

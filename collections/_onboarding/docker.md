@@ -10,7 +10,7 @@ order: 2
 
 DockerHub is where you can find and share container images (software components you can deploy and host) with your team and the Docker community. So teams can host their own instances of various common services or common components, we are publishing the components to https://hub.docker.com/r/bcgovimages/. Instructions for running these components is included on each entry in DockerHub.
 
-###### Common Services Team Library
+###### Common Service Team Library
 Our team is maintaining a github repo to manage the development, and continuous improvement of the reusable components and shared libraries we are publishing to hub.docker.com and npmjs.com.
 
 <https://github.com/bcgov/common-services-team-library>
