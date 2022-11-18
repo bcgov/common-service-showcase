@@ -2,8 +2,8 @@
 layout: team
 name: TEAM
 
-title: Meet the Common Services Showcase Team
-description: Founded in 2019, we are a cross-functional agile team, building on the work done by former and external contributors. Our team focuses on inspiring innovation for our customers with convenient and reliable Common Services.​<br /><br />We aim to help other development teams incorporate common services into their applications or take advantage of our hosted services. Using common services saves time, money and reduces software duplication.
+title: Meet the Common Service Showcase Team
+description: Founded in 2019, we are a cross-functional agile team, building on the work done by former and external contributors. Our team focuses on inspiring innovation for our customers with convenient and reliable Common Services.​<br /><br />We aim to help other development teams incorporate Common Services into their applications or take advantage of our hosted services. Using Common Services saves time, money and reduces software duplication.
 
 ---
 <div class="text-center mb-5">
@@ -13,7 +13,7 @@ description: Founded in 2019, we are a cross-functional agile team, building on 
                 <img src="{{ site.baseurl }}/assets/images/team/sha.png" class="rounded" />
             </div>
             <h6>Sharolyn Hurley</h6>
-            <span>Product Manager</span>
+            <span>Senior Product Manager</span>
         </div>
         <div class="person">
             <div class="person-crop">
@@ -24,10 +24,10 @@ description: Founded in 2019, we are a cross-functional agile team, building on 
         </div>
         <div class="person">
             <div class="person-crop">
-                <img src="{{ site.baseurl }}/assets/images/team/tim.png" class="rounded" />
+                <img src="{{ site.baseurl }}/assets/images/team/tyl.png" class="rounded" />
             </div>
-            <h6>Tim Csaky</h6>
-            <span>Developer</span>
+            <h6>Tyler Pantella</h6>
+            <span>Senior UX Practitioner</span>
         </div>
     </div>
     <div>
@@ -36,21 +36,37 @@ description: Founded in 2019, we are a cross-functional agile team, building on 
                 <img src="{{ site.baseurl }}/assets/images/team/jer.png" class="rounded" />
             </div>
             <h6>Jeremy Ho</h6>
-            <span>Developer</span>
+            <span>Full-Stack Developer</span>
         </div>
         <div class="person">
             <div class="person-crop">
                 <img src="{{ site.baseurl }}/assets/images/team/kyl.png" class="rounded" />
             </div>
             <h6>Kyle Morel</h6>
-            <span>Developer</span>
+            <span>Full-Stack Developer</span>
         </div>
         <div class="person">
             <div class="person-crop">
                 <img src="{{ site.baseurl }}/assets/images/team/luc.png" class="rounded" />
             </div>
             <h6>Lucas O'Neil</h6>
-            <span>Developer</span>
+            <span>Full-Stack Developer</span>
+        </div>
+    </div>
+    <div>
+        <div class="person">
+            <div class="person-crop">
+                <img src="{{ site.baseurl }}/assets/images/team/dra.png" class="rounded" />
+            </div>
+            <h6>Dragan Colic</h6>
+            <span>Full-Stack Developer</span>
+        </div>
+        <div class="person">
+            <div class="person-crop">
+                <img src="{{ site.baseurl }}/assets/images/team/tim.png" class="rounded" />
+            </div>
+            <h6>Tim Csaky</h6>
+            <span>Full-Stack Developer</span>
         </div>
     </div>
 </div>

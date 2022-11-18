@@ -11,14 +11,14 @@ description: >-
   In S3, you can store and share files, images, and documents with co-workers, partners, or the public.
 
 onboard:
-  - 'Self Hosted Service'
+  - 'Self-Hosted Service'
   - 'DockerHub'
 onboardDescription: We provide <em>Docker Images</em> for hosting your own Common Object Management Storage Service.
 urls:
   github: https://github.com/bcgov/common-object-management-service/
   docs: https://coms-dev-master.apps.silver.devops.gov.bc.ca/api/v1/docs
   showcase: https://comss-dev-master.apps.silver.devops.gov.bc.ca/app/
-  postman: https://bcgov.github.io/common-service-showcase/assets/files/coms_postman_collection.json
+  postman: /common-service-showcase/assets/files/COMS.postman_collection.json
 showcaseDescription: >-
   The Common Object Management Service Showcase (COMSS) is a demonstration of how an application can use S3 to manage and share objects within government or with the public.
 

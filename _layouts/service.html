@@ -66,7 +66,7 @@ layout: default
 
   {% if page.onboard contains "API Access" %}
   <h5> <img class="img-fluid mr-3" src="{{ site.baseurl }}/assets/images/key.svg" alt="components"> <strong>API Access
-      through GETOK</strong></h5>
+      through the API Services Portal</strong></h5>
   <div class="feature-card">
     <div class="card">
       <div class="card-header">
@@ -140,7 +140,7 @@ layout: default
         <p class="mb-2">Please read our guide on <a target="_blank"
             href="https://github.com/bcgov/common-hosted-email-service/wiki/Best-Practices">Best Practices for use of
             the CHES messaging API</a>.</p>
-        <p class="mb-2">There is a change to our onboarding process for CHES. Before requesting your API credentials through GETOK,
+        <p class="mb-2">There is a change to our onboarding process for CHES. Before requesting your API credentials through the API Services Portal,
           you must make an IStore request for a consultation with OCIO Messaging (the underlying SMTP service provider).
           Book your consultation through your service desk (Office Productivity > Consulting Services > Messaging and
           Collaboration - Consulting) or email <a href="mailto:mcs@gov.bc.ca">mcs@gov.bc.ca</a>.</p>
@@ -154,7 +154,7 @@ layout: default
     </div>
     {% endif %}
 
-    {% include common/getokBtn.html %}
+    {% include common/apsBtn.html %}
   </div>
   {% endif %}
 
