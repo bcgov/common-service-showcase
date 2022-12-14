@@ -18,7 +18,9 @@ order: 1
 Go to the <a href="https://api.gov.bc.ca/devportal/api-directory" target="_blank">the API Services Portal</a> and find the API in the Directory.
 
 ###### Step 2 Request Access to API
-Submit the “Request Access" form for your application. You will get an email (typically within an hour or so) once your Request is completed.
+Submit the “Request Access" form for your application. You will get an email once your Request is completed.
+
+For security reasons, multiple developers cannot access or share a single set of API credentials for an application through the API Services Portal. Each developer should make their own access request, also creating an application in the request form, to use in their Development environment. Only one set of credentials should be requested and used for a project in its Production environment and should typically be requested by the Product Owner.
 
 ###### Step 3 Save your Client Credentials
 Once approved, your credentials will become active and you will have the API Access. Make sure you save your **Client ID** and **Client Secret** securely. If you lose your Client Secret you will have to generate a new one.
@@ -27,5 +29,3 @@ Once approved, your credentials will become active and you will have the API Acc
 See the service page for the API Specifications as well as a Postman Collection.<br />
 See how it works: <a href="" data-toggle="modal" data-target="#exampleModal">Authorize your Postman request with an Access Token</a>
 {% include common/postmanExampleModal.html %}
-
-{% include common/apsBtn.html %}
