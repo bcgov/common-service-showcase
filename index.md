@@ -5,7 +5,7 @@ name: HOME
 {% assign carouselCards = site.overview | where: "type", "carousel" | sort: 'order' %}
 {% assign iconCards = site.overview | where: "type", "icon" | sort: 'order' %}
 {% assign checkerboardCards = site.overview | where: "type", "checkerboard" | sort: 'order' %}
-{% assign commonServices = site.services | where_exp:"service", "service.name != 'CHEFS'" | sort: 'order' %}
+{% assign commonServices = site.services | sort: 'order' %}
 
 <div class="container">
   <div id="overviewCarousel" class="carousel slide" data-ride="carousel">

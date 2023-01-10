@@ -2,26 +2,6 @@
 layout: default
 ---
 <div class="page-header">
-
-  {% if page.name == "CHEFS" %}
-  <div class="container">
-    <div class="css-alert alert alert-info alert-dismissible fade show" role="alert" aria-labelledby="info"
-      aria-describedby="desc">
-      <div class="icon mr-3 fas fa-info-circle"></div>
-      <p>
-        CHEFS is now maintained by the <a href="mailto:submit.digital@gov.bc.ca" target="_blank">Forms Design and
-          Submission</a> team in the Ministry of Citizens' Services.<br />Information regarding this <a
-          href="https://bcdevex.atlassian.net/wiki/spaces/CCP/pages/1022722067/CHEFS+is+moving+to+Citizen+Services"
-          target="_blank">transition</a> has been published. <br />If you have bookmarked this page, please update your
-        bookmarks to <a href="https://submit.digital.gov.bc.ca/app" target="_blank">this landing page</a>.
-      </p>
-      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-  </div>
-  {% endif %}
-
   <h2 class="text-center">
     {% if page.pictures.icon %}
     <img class="img-fluid mr-3 mascot" src="{{ site.baseurl }}/assets/images/{{ page.pictures.icon }}" alt="mascot">
@@ -171,17 +151,6 @@ layout: default
           <div class="col-sm-3">Feature List</div>
           <div class="col-sm-9">{{ content }}</div>
         </div>
-        {% if page.urls.fider %}
-        <div class="row no-gutters">
-          <div class="col-sm-3">Feedback</div>
-          <div class="col-sm-9">
-            <a href="{{ page.urls.fider }}" target="_blank">Post your ideas, leave a comment or vote on what CHEFS
-              features we should build next
-              <i class="fas fa-external-link-square-alt"></i>
-            </a>
-          </div>
-        </div>
-        {% endif %}
         <div class="row no-gutters">
           <div class="col-sm-3">Hosted URL</div>
           <div class="col-sm-9">
@@ -316,7 +285,7 @@ layout: default
   {% include common/npmTable.html param=page %}
   {% endif %}
 
-  <!-- unstructured markdown content (eg: CHEFS, Certbot page)-->
+  <!-- unstructured markdown content (eg: Certbot page)-->
   {% else %}
   <div class="unstructured-content">
     {{ content }}
