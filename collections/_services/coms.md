@@ -16,11 +16,10 @@ onboard:
 onboardDescription: We provide <em>Docker Images</em> for hosting your own Common Object Management Storage Service.
 urls:
   github: https://github.com/bcgov/common-object-management-service/
-  docs: https://coms-dev-master.apps.silver.devops.gov.bc.ca/api/v1/docs
-  showcase: https://comss-dev-master.apps.silver.devops.gov.bc.ca/app/
-  postman: /common-service-showcase/assets/files/COMS.postman_collection.json
+  docs: https://coms-test.api.gov.bc.ca/api/v1/docs
+  showcase: https://bcbox-test-master.apps.silver.devops.gov.bc.ca/
 showcaseDescription: >-
-  The Common Object Management Service Showcase (COMSS) is a demonstration of how an application can use S3 to manage and share objects within government or with the public.
+  BCBox (test) implements the COMS API to manage and share files within government or with the public.
 
 dockerImages:
   - name: Common Object Management Service
