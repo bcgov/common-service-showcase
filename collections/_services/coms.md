@@ -11,13 +11,22 @@ description: >-
   In S3, you can store and share files, images, and documents with co-workers, partners, or the public.
 
 onboard:
-  - 'Self-Hosted Service'
+  - 'Hosted Service'
   - 'DockerHub'
-onboardDescription: We provide <em>Docker Images</em> for hosting your own Common Object Management Storage Service.
+onboardDescription: >-
+  COMS is now available as a shared hosted service as well as an application that you can customise and deploy
+  in your own infrastructure.
+  See our documentation of <a href="https://github.com/bcgov/common-object-management-service/wiki/Hosting-Considerations" target="_blank">hosting
+   considerations</a> and <a href="https://github.com/bcgov/common-object-management-service/wiki/Deployment-Guide" target="_blank">deployment
+   guide</a> in the COMS wiki.<br /><br />
+  We have also launched <a href=" https://bcbox.nrs.gov.bc.ca/" target="_blank">BCBox</a>, a user-interface for managing files,
+  integrated with the hosted COMS service.
 urls:
+  hosted: https://coms.api.gov.bc.ca
   github: https://github.com/bcgov/common-object-management-service/
-  docs: https://coms-test.api.gov.bc.ca/api/v1/docs
-  showcase: https://bcbox-test-master.apps.silver.devops.gov.bc.ca/
+  docs: https://coms.api.gov.bc.ca/api/v1/docs
+  guide: https://github.com/bcgov/common-object-management-service/wiki
+  ui: https://bcbox.nrs.gov.bc.ca/
 showcaseDescription: >-
   BCBox (test) implements the COMS API to manage and share files within government or with the public.
 

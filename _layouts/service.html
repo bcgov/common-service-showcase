@@ -120,7 +120,8 @@ layout: default
         <p class="mb-2">Please read our guide on <a target="_blank"
             href="https://github.com/bcgov/common-hosted-email-service/wiki/Best-Practices">Best Practices for use of
             the CHES messaging API</a>.</p>
-        <p class="mb-2">There is a change to our onboarding process for CHES. Before requesting your API credentials through the API Services Portal,
+        <p class="mb-2">There is a change to our onboarding process for CHES. Before requesting your API credentials
+          through the API Services Portal,
           you must make an IStore request for a consultation with OCIO Messaging (the underlying SMTP service provider).
           Book your consultation through your service desk (Office Productivity > Consulting Services > Messaging and
           Collaboration - Consulting) or email <a href="mailto:mcs@gov.bc.ca">mcs@gov.bc.ca</a>.</p>
@@ -154,8 +155,7 @@ layout: default
         <div class="row no-gutters">
           <div class="col-sm-3">Hosted URL</div>
           <div class="col-sm-9">
-            <a href="{{ page.urls.hosted }}" target="_blank">{{ page.urls.hosted }}
-              <i class="fas fa-external-link-square-alt"></i>
+            <a href="{{ page.urls.hosted }}" target="_blank">{{ page.urls.hosted }}<i class="fas fa-external-link-square-alt"></i>
             </a>
           </div>
         </div>
@@ -163,8 +163,7 @@ layout: default
           <div class="col-sm-3">Documentation</div>
           <div class="col-sm-9">
             {% if page.urls.guide %}
-            <a href="{{ page.urls.guide }}" target="_blank">User Guide
-              <i class="fas fa-external-link-square-alt"></i>
+            <a href="{{ page.urls.guide }}" target="_blank">User Guide<i class="fas fa-external-link-square-alt"></i>
             </a>
             {% endif %}
           </div>
@@ -173,8 +172,7 @@ layout: default
         <div class="row no-gutters">
           <div class="col-sm-3">GitHub</div>
           <div class="col-sm-9">
-            <a href="{{ page.urls.github }}" target="_blank">Repository
-              <i class="fas fa-external-link-square-alt"></i>
+            <a href="{{ page.urls.github }}" target="_blank">Repository<i class="fas fa-external-link-square-alt"></i>
             </a>
           </div>
         </div>
@@ -183,8 +181,7 @@ layout: default
           <div class="col-sm-3">API Review</div>
           <div class="col-sm-9">
             {% if page.urls.docs %}
-            <a href="{{ page.urls.docs }}" target="_blank">Specification
-              <i class="fas fa-external-link-square-alt"></i>
+            <a href="{{ page.urls.docs }}" target="_blank">Specification<i class="fas fa-external-link-square-alt"></i>
             </a>
             {% endif %}
             {% if page.urls.postman %}
@@ -195,11 +192,25 @@ layout: default
             {% endif %}
           </div>
         </div>
+
+        {% if page.urls.ui %}
+        <div class="row no-gutters">
+          <div class="col-sm-3">UI Integration</div>
+          <div class="col-sm-9">
+            <a href="{{ page.urls.ui }}" target="_blank">BCBox<i class="fas fa-external-link-square-alt"></i>
+            </a><br />
+            <small>Manage and share your files through a web interface.</small>
+          </div>
+        </div>
+        {% endif %}
+
       </div>
     </div>
+    {% if page.button %}
     <div class="text-center mt-5">
       <a href="{{ page.urls.hosted}}" class="btn btn-primary" role="button" aria-disabled="true">{{ page.title }}</a>
     </div>
+    {% endif %}
   </div>
   {% endif %}
 
@@ -221,20 +232,17 @@ layout: default
           <div class="col-sm-9">
             {% if page.urls.docs or page.urls.postman %}
             {% if page.urls.docs %}
-            <a href="{{ page.urls.docs }}" target="_blank">Specification
-              <i class="fas fa-external-link-square-alt"></i>
+            <a href="{{ page.urls.docs }}" target="_blank">Specification<i class="fas fa-external-link-square-alt"></i>
             </a>
             {% endif %}
             {% if page.urls.postman %}
             <br /> <br />
-            <a href="{{ page.urls.postman }}" target="_blank" download>Postman Collection
-              <i class="fas fa-download"></i>
+            <a href="{{ page.urls.postman }}" target="_blank" download>Postman Collection<i class="fas fa-download"></i>
             </a>
             {% endif %}
             {% if page.urls.postmanHelp %}
             <br /> <br />
-            <a href="{{ page.urls.postmanHelp }}" target="_blank" download>Postman Collection Help
-              <i class="fas fa-download"></i>
+            <a href="{{ page.urls.postmanHelp }}" target="_blank" download>Postman Collection Help<i class="fas fa-download"></i>
             </a>
             {% endif %}
             {% else %}
@@ -246,8 +254,7 @@ layout: default
           <div class="col-sm-3">GitHub</div>
           <div class="col-sm-9">
             {% if page.urls.docs %}
-            <a href="{{ page.urls.github }}" target="_blank">Repository
-              <i class="fas fa-external-link-square-alt"></i>
+            <a href="{{ page.urls.github }}" target="_blank">Repository<i class="fas fa-external-link-square-alt"></i>
             </a>
             {% else %}
             Not Applicable
@@ -258,8 +265,7 @@ layout: default
           <div class="col-sm-3">See in Action</div>
           <div class="col-sm-9">
             {% if page.urls.showcase %}
-            <a href="{{ page.urls.showcase }}" target="_blank">Showcase App
-              <i class="fas fa-external-link-square-alt"></i>
+            <a href="{{ page.urls.showcase }}" target="_blank">Showcase App<i class="fas fa-external-link-square-alt"></i>
             </a>
             <hr>
             {{ page.showcaseDescription }}
