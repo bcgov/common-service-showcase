@@ -12,6 +12,7 @@ description: >-
 onboard:
   - 'Hosted Service'
 onboardDescription: We provide a <em>Hosted Service</em> as well as documented <em>open-source code</em> for hosting your own ClamAV Mirror service.
+button: true
 urls:
   hosted: https://clamav-mirror.apps.silver.devops.gov.bc.ca
   github: https://github.com/bcgov/clamav-mirror

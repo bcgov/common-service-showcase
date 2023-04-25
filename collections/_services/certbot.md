@@ -16,7 +16,6 @@ descriptionLinks:
       text: Review Certbot documentation
 contentStyle: unstructured
 onboard:
-  - 'Self-Hosted Service'
   - 'DockerHub'
 onboardDescription: Deploy on OpenShift using the <em>Docker Image</em>.
 urls:

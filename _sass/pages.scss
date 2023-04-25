@@ -138,29 +138,10 @@ h2 .mascot{
     li {
       list-style: none;
       padding: 0;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
+      list-style-type: square;
+
     }
   }
 
-  .person {
-    display: inline-block;
-    padding: 1rem;
-    .person-crop {
-      width: 200px;
-      height: 200px;
-      position: relative;
-      overflow: hidden;
-      border-radius: 50%;
-      border: 10px solid $bcgov-yellow;
-      img {
-        display: inline;
-        margin: 0 auto;
-        height: 100%;
-        width: auto;
-      }
-    }
-    h6 {
-      margin-top: 1rem;
-    }
-  }
 }
