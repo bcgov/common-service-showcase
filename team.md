@@ -14,7 +14,6 @@ description: Founded in 2019, we are a cross-functional agile team, building on 
         <li>Tyler Pantella - Senior UX Practitioner</li>
         <li>Jeremy Ho - Full-Stack Developer</li>
         <li>Kyle Morel - Full-Stack Developer</li>
-        <li>Dragan Colic - Full-Stack Developer</li>
         <li>Tim Csaky - Full-Stack Developer</li>
     </ul>
 </div>
