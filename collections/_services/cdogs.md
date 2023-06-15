@@ -13,7 +13,7 @@ onboardDescription: We provide <em>API Access, Docker Images, and NPM Packages</
 urls:
   github: https://github.com/bcgov/common-document-generation-service
   docs: https://cdogs.api.gov.bc.ca/api/v2/docs
-  showcase: https://dgrsc.apps.silver.devops.gov.bc.ca/dgrsc/
+  showcase: https://dgrsc-prod-master.apps.silver.devops.gov.bc.ca
   postman: /common-service-showcase/assets/files/CDOGS.postman_collection.json
   postmanHelp: /common-service-showcase/assets/files/common_services_postman_readme.md
 pictures:
