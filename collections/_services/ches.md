@@ -13,7 +13,7 @@ onboardDescription: We provide <em>API Access</em> for the Common Hosted Email S
 urls:
   github: https://github.com/bcgov/common-hosted-email-service
   docs: https://ches.api.gov.bc.ca/api/v1/docs
-  showcase: https://chess.apps.silver.devops.gov.bc.ca/app/
+  showcase: https://chess-prod-master.apps.silver.devops.gov.bc.ca
   postman: /common-service-showcase/assets/files/CHES.postman_collection.json
   postmanHelp: /common-service-showcase/assets/files/common_services_postman_readme.md
 pictures:
