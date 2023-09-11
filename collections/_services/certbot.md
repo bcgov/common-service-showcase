@@ -31,6 +31,17 @@ dockerImages:
       - https://img.shields.io/docker/image-size/bcgovimages/certbot.svg
 ---
 
+<div class="mt-5 css-alert alert alert-info alert-dismissible fade show" role="alert" aria-labelledby="info"
+      aria-describedby="desc">
+      <div class="icon mr-3 fas fa-info-circle"></div>
+      <div>
+        <p class="mb-2">Update: As of August 2023, Entrust (the only approved certificate provider for BC Gov production environments) has discontinued support for Certbot. Currently, Certbot cannot be used to manage your Entrust certificates.</p>
+      </div>
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
 #### Feature List
 
 - Can utilize [https://letsencrypt.org/](https://letsencrypt.org/){:target="_blank"} or other ACME compliant Certificate Authority for issuing certificates
