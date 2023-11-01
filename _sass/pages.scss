@@ -118,6 +118,15 @@ h2 .mascot{
   }
 }
 
+/* Style specific to the embedded youtube video of service pages */
+.embed-video {
+  width: 600px;
+  height: 337px;
+  float: none;
+  clear: both;
+  margin: 2px auto;
+}
+
 /* Style specific to the onboarding pages */
 .onboarding-content {
   .feature-card .onboard-table-desc {
