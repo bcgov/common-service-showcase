@@ -35,10 +35,21 @@ layout: default
   </div>
 </div>
 {% if page.youtubeEmbed %}
-<div class="container text-center mb-5">
+<!-- <div class="container text-center mb-5">
   <iframe width="600" height="337"
     src="{{ page.youtubeEmbed }}">
   </iframe>
+</div> -->
+<div class="embed-video mb-5">
+  <embed
+    src="{{ page.youtubeEmbed }}"
+    wmode="transparent"
+    type="video/mp4"
+    width="100%" height="100%"
+    allow="autoplay; encrypted-media; picture-in-picture"
+    allowfullscreen
+    title="embedded-youtube"
+  >
 </div>
 {% endif %}
 {% if page.descriptionExt and page.descriptionExt != empty %}
