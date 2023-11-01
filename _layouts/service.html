@@ -34,6 +34,16 @@ layout: default
     </div>
   </div>
 </div>
+{% if page.youtubeEmbed %}
+<div class="container text-center mb-5">
+  <iframe width="600" height="337"
+    src="{{ page.youtubeEmbed }}">
+  </iframe>
+</div>
+{% endif %}
+{% if page.descriptionExt and page.descriptionExt != empty %}
+<div class="container mb-5">{{ page.descriptionExt }}</div>
+{% endif %}
 
 <div class="container">
   {% if page.contentStyle != "unstructured" %}
@@ -50,7 +60,10 @@ layout: default
   <div class="feature-card">
     <div class="card">
       <div class="card-header">
-        {{ page.title }} ({{ page.name }})
+        {{ page.title }}
+        {% if page.name %}
+        ({{ page.name }})
+        {% endif %}
       </div>
       <div class="card-body">
         <div class="row no-gutters">
@@ -145,7 +158,10 @@ layout: default
   <div class="feature-card">
     <div class="card">
       <div class="card-header">
-        {{ page.title }} ({{ page.name }})
+        {{ page.title }}
+        {% if page.name %}
+        ({{ page.name }})
+        {% endif %}
       </div>
       <div class="card-body">
         <div class="row no-gutters">
@@ -177,6 +193,17 @@ layout: default
           </div>
         </div>
 
+        {% if page.urls.apiLink %}
+        <div class="row no-gutters">
+          <div class="col-sm-3">API</div>
+          <div class="col-sm-9">
+            <a href="{{ page.urls.apiLink.link }}" target="_blank">
+              {{ page.urls.apiLink.text }}
+              <i class="fas fa-external-link-square-alt"></i>
+            </a>
+          </div>
+        </div>
+        {% else %}
         <div class="row no-gutters">
           <div class="col-sm-3">API Review</div>
           <div class="col-sm-9">
@@ -192,6 +219,7 @@ layout: default
             {% endif %}
           </div>
         </div>
+        {% endif %}
 
         {% if page.urls.ui %}
         <div class="row no-gutters">
@@ -220,7 +248,10 @@ layout: default
   <div class="feature-card">
     <div class="card">
       <div class="card-header">
-        {{ page.title }} ({{ page.name }})
+        {{ page.title }}
+        {% if page.name %}
+        ({{ page.name }})
+        {% endif %}
       </div>
       <div class="card-body">
         <div class="row no-gutters">
