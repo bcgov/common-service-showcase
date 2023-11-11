@@ -22,6 +22,7 @@ pictures:
 
 showcaseDescription: >-
   The Document Generation Showcase demonstrates the capabilities of the Common Document Generation Service API (CDOGS).
+  You will also find example templates you can download to get you started within this demo app.
 
 dockerImages:
   - name: Common Document Generation Service
