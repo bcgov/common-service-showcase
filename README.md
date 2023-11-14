@@ -35,22 +35,37 @@ GitHub Pages understands Jekyll and will build and deploy sites automatically, d
 
 ## Build with Jekyll
 
-1. Install a full Ruby development environment (2.6 works).
-For Windows users, visit <https://rubyinstaller.org/downloads/> and download latest version WITH Devkit option. Install the installer (when prompted, just tap enter to use defaults - may happen twice)
+1. Install a full Ruby development environment.
 
-1. Install [Jekyll](https://jekyllrb.com) and bundler gems.
+    **Windows:** visit <https://rubyinstaller.org/downloads/> and download latest version WITH Devkit option. Install the installer (when prompted, just tap enter to use defaults - may happen twice).
+
+    **MacOS:** use `chruby` and `ruby-install` to install the latest version (MacOS comes with an outdated version). It can be installed via [Homebrew](https://brew.sh).
+
+    *For up-to-date instructions on installing Ruby, please see [Jekyll's installation page](https://jekyllrb.com/docs/installation/#requirements).*
+
+2. Install [Jekyll](https://jekyllrb.com) and Bundler.
 Open a console window with directory at root of this repo and run:
 
-```sh
-gem install bundler
-bundle install
-```
+    ```sh
+    gem install jekyll bundler
+    ```
 
-1. Build and serve site (locally)
+3. Install bundler gems:
 
-```sh
-bundle exec jekyll build
-bundle exec jekyll serve
-```
+    ```sh
+    bundle install
+    ```
 
-1. Go to site: <http://localhost:4000/common-service-showcase/>
+    If using MacOS, run the following before `bundle install`:
+    ```sh
+    bundle config build.nokogiri --use-system-libraries
+    ```
+
+4. Build and serve site (locally):
+
+    ```sh
+    bundle exec jekyll build
+    bundle exec jekyll serve
+    ```
+
+5. Go to site: <http://localhost:4000/common-service-showcase/>
