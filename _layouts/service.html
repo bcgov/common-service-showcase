@@ -108,6 +108,15 @@ layout: default
           </div>
         </div>
         <div class="row no-gutters">
+          <div class="col-sm-3">Documentation</div>
+          <div class="col-sm-9">
+            {% if page.urls.guide %}
+            <a href="{{ page.urls.guide }}" target="_blank">User Guide<i class="fas fa-external-link-square-alt"></i>
+            </a>
+            {% endif %}
+          </div>
+        </div>
+        <div class="row no-gutters">
           <div class="col-sm-3">GitHub</div>
           <div class="col-sm-9">
             {% if page.urls.docs %}
