@@ -10,6 +10,7 @@ description: Founded in 2019, we are a cross-functional agile team, building on 
     <h4>Team Members</h4>
     <ul class="team-list">
         <li>Sharolyn Hurley - Senior Product Manager</li>
+        <li>Laxmi Nidhi - Senior Scrum Master</li>
         <li>Tyler Pantella - Senior UX Practitioner</li>
         <li>Norris Ng - Full-Stack Developer</li>
         <li>Jeremy Ho - Full-Stack Developer</li>
