@@ -150,22 +150,33 @@ layout: default
       aria-describedby="desc">
       <div class="icon mr-3 fas fa-info-circle"></div>
       <div>
-        <p class="mb-2">Please read our guide on <a target="_blank"
+        <p class="mt-1">Please read our guide on <a target="_blank"
             href="https://github.com/bcgov/common-hosted-email-service/wiki/Best-Practices">Best Practices for use of
             the CHES messaging API</a>.</p>
-        <p class="mb-2">There is a change to our onboarding process for CHES. Before requesting your API credentials
-          through the API Services Portal,
-          you must make an IStore request for a consultation with OCIO Messaging (the underlying SMTP service provider).
-          Book your consultation through your service desk (Office Productivity > Consulting Services > Messaging and
-          Collaboration - Consulting) or email <a href="mailto:mcs@gov.bc.ca">mcs@gov.bc.ca</a>.</p>
-        <p>Requests to the CHES API must originate from an IP address within the BC Government's SpanBC network. If your
-          application is hosted outside of the SpanBC network OCIO may be able to find you an alternate solution.
-          Failure to contact OCIO may affect your access to the CHES service.</p>
       </div>
       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
         <span aria-hidden="true">&times;</span>
       </button>
     </div>
+    <div class="mt-5 css-alert alert alert-warning alert-dismissible fade show" role="alert" aria-labelledby="warn"
+    aria-describedby="desc">
+    <div class="icon mr-3 fas fa-exclamation-triangle"></div>
+    <div>
+      <p class="mb-2 mt-1"><strong>Requests to the CHES API must originate from within the BC Government's SPANBC network.</strong></p>
+      <p class="mb-2">If you are calling CHES from <b>outside</b> the SPANBC network (for example, if your application is
+        hosted on Azure or AWS), you must first consult with OCIO Messaging (our underlying SMTP service provider)
+        before requesting access to CHES. Failure to contact OCIO may affect your access to CHES.</p>
+      <p>You can book a consultation via either of the following:</p>
+      <p><ul>
+        <li><b>iStore request, via your service desk:</b> Office Productivity > Consulting Services > Messaging and Collaboration - Consulting</li>
+        <li><b>Email:</b> <a href="mailto:mcs@gov.bc.ca">mcs@gov.bc.ca</a> </li>
+      </ul></p>
+      <p>No prior consultation is required if your application is already on SPANBC (e.g. OpenShift); just make sure you indicate this in your API Services Portal request.</p>
+    </div>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
     {% endif %}
 
     {% include common/apsBtn.html %}
