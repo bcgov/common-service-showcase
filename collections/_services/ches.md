@@ -12,6 +12,7 @@ onboard: ['API Access']
 onboardDescription: We provide <em>API Access</em> for the Common Hosted Email Service.
 urls:
   github: https://github.com/bcgov/common-hosted-email-service
+  guide: https://github.com/bcgov/common-hosted-email-service/wiki
   docs: https://ches.api.gov.bc.ca/api/v1/docs
   showcase: https://chess-prod-master.apps.silver.devops.gov.bc.ca
   postman: /common-service-showcase/assets/files/CHES.postman_collection.json
