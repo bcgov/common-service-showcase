@@ -24,4 +24,4 @@ pictures:
 ---
 - Keep your ClamAV instance up to date with freshclam
 - Intelligently update definitions using differential data
-- Secure and accessible only from within the OCP4 Silver cluster
+- Accessible and secure exclusively from within three tiers of the OpenShift platform
