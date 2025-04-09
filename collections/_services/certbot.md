@@ -9,26 +9,18 @@ description: >-
    Use Certbot to automatically update TLS Certificates on OpenShift Routes.
 descriptionLinks:
   - link:
-      url: https://github.com/BCDevOps/certbot
+      url: https://github.com/bcgov/certbot
       text: Github
   - link:
-      url: https://github.com/BCDevOps/certbot/blob/master/README.md
+      url: https://github.com/bcgov/certbot/blob/master/README.md
       text: Review Certbot documentation
 contentStyle: unstructured
 onboard:
-  - 'DockerHub'
+  - 'Image available for self-hosting'
 onboardDescription: Deploy on OpenShift using the <em>Docker Image</em>.
 urls:
-  github: https://github.com/BCDevOps/certbot
-  docs: https://github.com/BCDevOps/certbot/blob/master/README.md
-dockerImages:
-  - name: Certbot
-    url: https://hub.docker.com/r/bcgovimages/certbot/
-    description: This image provides an automated way of managing and updating TLS certificates onto OpenShift Routes.
-    badges:
-      - https://img.shields.io/docker/v/bcgovimages/certbot.svg?sort=semver
-      - https://img.shields.io/docker/pulls/bcgovimages/certbot.svg
-      - https://img.shields.io/docker/image-size/bcgovimages/certbot.svg
+  github: https://github.com/bcgov/certbot
+  docs: https://github.com/bcgov/certbot/blob/master/README.md
 ---
 
 <div class="mt-5 css-alert alert alert-info alert-dismissible fade show" role="alert" aria-labelledby="info"

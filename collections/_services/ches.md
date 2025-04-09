@@ -17,6 +17,9 @@ urls:
   showcase: https://chess-prod-master.apps.silver.devops.gov.bc.ca
   postman: /common-service-showcase/assets/files/CHES.postman_collection.json
   postmanHelp: /common-service-showcase/assets/files/common_services_postman_readme.md
+  support:
+   url: https://teams.microsoft.com/l/channel/19%3A36c3b215337f401ea69793ec88b77b21%40thread.tacv2/CDOGS%20and%20CHES?groupId=bef8086f-20c7-43a4-bd07-29ce764e818c&tenantId=6fdb5200-3d0d-4a8a-b036-d3685e359adc
+   text: MS Teams channel
 pictures:
   icon: missy.svg
   header: ches.svg

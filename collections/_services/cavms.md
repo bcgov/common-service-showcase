@@ -18,6 +18,9 @@ urls:
   github: https://github.com/bcgov/clamav-mirror
   docs: https://github.com/bcgov/clamav-mirror/blob/master/README.md
   guide: https://github.com/bcgov/clamav-mirror/blob/master/README.md
+  support:
+   url: https://chat.developer.gov.bc.ca/channel/nr-common-services-showcase
+   text: 'RocketChat #nr-common-services-showcase'
 pictures:
   icon: clamav.webp
 #   header: ???.svg

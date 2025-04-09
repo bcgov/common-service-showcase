@@ -142,6 +142,15 @@ layout: default
             {% endif %}
           </div>
         </div>
+        <div class="row no-gutters">
+          <div class="col-sm-3">Get Support</div>
+          <div class="col-sm-9">
+            {% if page.urls.support %}
+            <a href="{{ page.urls.support.url }}" target="_blank">{{ page.urls.support.text }}<i class="fas fa-external-link-square-alt"></i>
+            </a>
+            {% endif %}
+          </div>
+        </div>
       </div>
     </div>
 
@@ -251,6 +260,15 @@ layout: default
           </div>
         </div>
         {% endif %}
+        <div class="row no-gutters">
+          <div class="col-sm-3">Get Support</div>
+          <div class="col-sm-9">
+            {% if page.urls.support %}
+            <a href="{{ page.urls.support.url }}" target="_blank">{{ page.urls.support.text }}<i class="fas fa-external-link-square-alt"></i>
+            </a>
+            {% endif %}
+          </div>
+        </div>
 
         {% if page.urls.ui %}
         <div class="row no-gutters">
