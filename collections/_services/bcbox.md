@@ -2,7 +2,6 @@
 layout: service
 type: service
 
-name:
 title: BCBox
 order: 1
 description: >-
@@ -21,6 +20,9 @@ urls:
   apiLink:
     text: Common Object Management Service (COMS)
     link: https://bcgov.github.io/common-service-showcase/services/coms.html
+  support:
+   url: https://teams.microsoft.com/l/channel/19%3A4e700366d8aa46479a7998ffa7c86a6a%40thread.tacv2/COMS%20and%20BCBox?groupId=bef8086f-20c7-43a4-bd07-29ce764e818c&tenantId=6fdb5200-3d0d-4a8a-b036-d3685e359adc
+   text: MS Teams channel
 button: true
 pictures:
   icon: bcbox.svg

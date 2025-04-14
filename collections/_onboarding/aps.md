@@ -12,6 +12,8 @@ order: 1
 - <a href="/common-service-showcase/services/ches.html">Common Hosted Email Service</a>
 - <a href="/common-service-showcase/services/cdogs.html">Common Document Generation Service</a>
 
+**Note: the <a href="/common-service-showcase/services/coms.html">Common Object Management Service</a>, is also listed in the APS API Directory but no formal request process is required. Authentication is done with a User JWT or object-storage bucket credentials.
+
 #### How To Use the API Services Portal
 
 ###### Step 1 Find the API
