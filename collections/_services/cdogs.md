@@ -9,7 +9,7 @@ description: >-
   Leverage your structured datasets and your business templates to automatically populate printable documents, spreadsheets, presentations, or PDFs using the Common Document Generation Service.
 
 onboard: ['API Access']
-onboardDescription: We provide <em>API Access for the Common Document Generation Service via the APS Portal.
+onboardDescription: We provide API Access for the Common Document Generation Service via the <b>API Services Portal</b>.
 urls:
   github: https://github.com/bcgov/common-document-generation-service
   guide: https://github.com/bcgov/common-document-generation-service/wiki

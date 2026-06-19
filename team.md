@@ -10,10 +10,9 @@ description: Founded in 2019, we are a cross-functional agile team, building on 
 <h4>Contact us</h4>
 <ul>
     <li>
-        <img src="{{ site.baseurl }}/assets/images/rocketchat-brands.svg" alt="Contact Us on Rocket Chat" />
         <span>
-            Find developer support on our Rocket.Chat channel:<br />
-            <a href="https://chat.developer.gov.bc.ca/channel/nr-common-services-showcase" target="_blank">#nr-common-services-showcase</a>
+            Find developer support on Microsoft Teams:
+            <a href="https://teams.microsoft.com/l/channel/19%3AqztmPpuePgw_2JUN20Q41vhFSP0RNuu1aSal0br0WxY1%40thread.tacv2/General?groupId=bef8086f-20c7-43a4-bd07-29ce764e818c&tenantId=6fdb5200-3d0d-4a8a-b036-d3685e359adc" target="_blank">Common Services Showcase</a>
         </span>
     </li>
     <li>

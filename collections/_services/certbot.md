@@ -52,5 +52,5 @@ If you want to deploy your own version of Certbot, you can start by:
 
 We are always interested in learning about what feature we should add next. If you have a suggestion, you can reach out to us through:
 
-- Find developer support on our [Rocket.Chat channel](https://chat.developer.gov.bc.ca/channel/nr-common-services-showcase){:target="_blank"} #nr-common-services-showcase
+- Find developer support on [Microosft Teams](https://teams.microsoft.com/l/channel/19%3AqztmPpuePgw_2JUN20Q41vhFSP0RNuu1aSal0br0WxY1%40thread.tacv2/General?groupId=bef8086f-20c7-43a4-bd07-29ce764e818c&tenantId=6fdb5200-3d0d-4a8a-b036-d3685e359adc){:target="_blank"}
 - Email: [nr.commonserviceshowcase@gov.bc.ca](mailto:nr.commonserviceshowcase@gov.bc.ca){:target="_blank"}
