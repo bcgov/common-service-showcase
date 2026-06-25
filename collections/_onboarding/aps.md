@@ -7,27 +7,34 @@ order: 1
 ---
 #### Manage your access to our hosted APIs using the API Services Portal
 
-<p class="mb-3">The API Services Portal is a self-serve tool for providing teams access (via client credentials) to the following hosted API's:</p>
+<p class="mb-3">The API Services Portal is a self-serve tool for providing teams access (via client credentials) to the following hosted APIs:</p>
 
-- <a href="/common-service-showcase/services/ches.html">Common Hosted Email Service</a>
-- <a href="/common-service-showcase/services/cdogs.html">Common Document Generation Service</a>
+- <a href="/common-service-showcase/services/ches.html">Common Hosted Email Service (CHES)</a>
+- <a href="/common-service-showcase/services/cdogs.html">Common Document Generation Service (CDOGS)</a>
 
-**Note: the <a href="/common-service-showcase/services/coms.html">Common Object Management Service</a>, is also listed in the APS API Directory but no formal request process is required. Authentication is done with a User JWT or object-storage bucket credentials.
+The **[Common Object Management Service (COMS)](/common-service-showcase/services/coms.html)** is also listed in the API Services Portal's API Directory, but no formal request process is required. Simply authenticate your API calls [with a user JWT](https://developer.gov.bc.ca/docs/default/component/common-object-management-service/Authentication/#oidc-authentication), or the [corresponding object storage bucket credentials](https://developer.gov.bc.ca/docs/default/component/common-object-management-service/Authentication/#s3-service-account).
 
 #### How To Use the API Services Portal
 
-###### Step 1 Find the API
+###### Step 1: Find the API
+
 Go to the <a href="https://api.gov.bc.ca/devportal/api-directory" target="_blank">the API Services Portal</a> and find the API in the Directory.
 
-###### Step 2 Request Access to API
+###### Step 2: Request Access to API
+
 Submit the “Request Access" form for your application. You will get an email once your Request is completed.
 
-For security reasons, multiple developers cannot access or share a single set of API credentials for an application through the API Services Portal. Each developer should make their own access request, also creating an application in the request form, to use in their Development environment. Only one set of credentials should be requested and used for a project in its Production environment and should typically be requested by the Product Owner.
+For security reasons, multiple developers cannot access or share a single set of API credentials for an application through the API Services Portal. Each developer should make their own access request, also creating an application in the request form, to use in their Development environment.
 
-###### Step 3 Save your Client Credentials
-Once approved, your credentials will become active and you will have the API Access. Make sure you save your **Client ID** and **Client Secret** securely. If you lose your Client Secret you will have to generate a new one.
+Only one set of credentials should be requested and used for a project in its Production environment, which should typically be requested by the Product Owner.
 
-###### Step 4 Test with your data and get familiar with API usage (Optional)
-See the service page for the API Specifications as well as a Postman Collection.<br />
+###### Step 3: Save your Client Credentials
+
+Once approved, your credentials will become active and you will have the API Access. Make sure you save your **Client ID** and **Client Secret** securely. If you lose your Client Secret, you will have to generate a new one.
+
+###### Step 4: Test with your data and get familiar with API usage (optional)
+
+See the corresponding service page for a link to the OpenAPI specifications.
+
 See how it works: <a href="" data-toggle="modal" data-target="#exampleModal">Authorize your Postman request with an Access Token</a>
 {% include common/postmanExampleModal.html %}
